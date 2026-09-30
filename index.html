@@ -1,0 +1,707 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="40 张行测卡，每张都有白话解释、分步例题和随堂练习。每次五张，手机离线可学。">
+  <meta name="theme-color" content="#f2f5fa">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'unsafe-inline'; style-src 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; worker-src 'self'; manifest-src 'self'; font-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="data:,">
+  <title>五张就停 · 行测回忆卡</title>
+  <style>:root{--paper:#fff;--bg:#f2f5fa;--ink:#172b4d;--muted:#52647e;--blue:#2455a6;--blue-light:#eaf0fa;--line:#ced8e6;--amber:#8a4b12;--radius:18px;font-family:system-ui,-apple-system,"Segoe UI","Microsoft YaHei",sans-serif;color:var(--ink);background:var(--bg);font-size:17px;line-height:1.7}
+*{box-sizing:border-box}body{margin:0}button,select,input{font:inherit;color:inherit}button,select,summary,a{-webkit-tap-highlight-color:transparent}button,select{min-height:48px;border:1px solid var(--line);border-radius:10px;background:white}button{padding:10px 20px;font-weight:600;cursor:pointer;line-height:1.4}button:hover{background:#eaf0fa;border-color:#849bbc}button:disabled{cursor:default;opacity:.58}button.primary{background:var(--blue);border-color:var(--blue);color:white;min-height:52px;padding:13px 28px}button.primary:hover{background:#1d4589}a{color:var(--blue);text-underline-offset:4px}a:hover{text-decoration-thickness:2px}:focus-visible{outline:3px solid var(--blue);outline-offset:5px}h1,h2,h3,p{margin:0}h1{font-size:26px;font-weight:750;letter-spacing:.03em}h2{font-size:25px;line-height:1.65;font-weight:680;text-wrap:pretty}h3{font-size:17px}p+p{margin-top:12px}[hidden]{display:none!important}fieldset{border:0;margin:0;padding:0}legend{padding:0}summary{cursor:pointer;min-height:52px;padding:13px 0;font-size:17px;font-weight:600}summary::marker{color:var(--blue)}.shell{width:min(100% - 64px,780px);margin:0 auto}.masthead{display:flex;align-items:center;justify-content:space-between;padding:38px 0 28px;gap:16px}.brand{display:flex;align-items:center;gap:12px}.brand svg{color:var(--blue);flex:none}.mastnote{font-size:14px;color:var(--muted);white-space:nowrap}.paper{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);box-shadow:0 10px 28px #172b4d05}.welcome{padding:42px 44px 34px;text-align:left}.welcome h2{font-size:30px;letter-spacing:.02em;line-height:1.65;margin-bottom:16px}.welcome>p{color:var(--muted)}.welcome>.primary{margin-top:26px;min-width:230px}.welcome .caption{margin-top:15px;font-size:14px}.five-lines{display:flex;gap:8px;width:126px;margin-bottom:27px}.five-lines i{display:block;flex:1;height:4px;border-radius:2px;background:#b8c9e2}.five-lines i:first-child{background:var(--blue)}.muted,.caption{color:var(--muted)}.caption{font-size:14px;line-height:1.8}.utilities{margin:28px 10px 0}.utility{border-bottom:1px solid var(--line)}.utility>summary{padding:17px 0;min-height:62px}.summary-hint{float:right;font-size:14px;font-weight:400;color:var(--muted);padding-top:3px;margin-left:8px}.utility-body{padding:4px 0 22px}.utility-body>p{margin-bottom:14px}.filter-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}label{display:grid;gap:6px;font-size:17px}select{width:100%;padding:8px 12px;margin-bottom:12px}.small-disclosure{margin-top:12px}.small-disclosure summary{font-size:15px;color:var(--muted);font-weight:500}.small-disclosure p{margin:8px 0}.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}.danger{color:#9a3b27}.notice{padding:14px 18px;border-radius:10px;background:var(--blue-light);border:1px solid var(--line);margin:0 0 20px;font-size:17px;overflow-wrap:anywhere}.notice.warning{background:#fff5e9;border-color:#e6c9a6;color:#784110}.round-head{display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:15px;color:var(--muted);margin-top:-8px}.text-button{background:transparent;border-color:transparent;color:var(--muted);font-size:15px;padding:9px 6px}.round-progress{display:flex;gap:7px;margin:4px 0 20px}.round-progress span{height:4px;border-radius:2px;flex:1;background:#d5dfed}.round-progress span.complete{background:var(--blue)}.round-progress span.current{background:#87a3cf}.study-paper{padding:32px 40px 36px}.card-meta{font-size:14px;color:var(--blue);font-weight:600;letter-spacing:.06em;margin-bottom:18px}.study-paper h2{font-size:25px;margin-bottom:25px;overflow-wrap:anywhere}.study-paper #recall>.muted{margin-top:22px;margin-bottom:25px}.section-label{font-size:14px;color:var(--muted);font-weight:500;border-top:1px solid var(--line);padding-top:23px;margin-top:4px}.answer{margin-top:12px;font-size:19px;line-height:1.9;white-space:pre-line;overflow-wrap:anywhere}.hook{border-left:3px solid var(--blue);background:var(--bg);padding:13px 17px;margin-top:22px!important;font-size:17px;font-weight:600}.trap{margin-top:23px}.trap h3{font-size:14px;color:var(--amber);font-weight:600;margin-bottom:5px}.trap p{font-size:17px;color:var(--muted)}.source{overflow-wrap:anywhere}.ratings{margin-top:26px;border-top:1px solid var(--line);padding-top:22px}.ratings legend{float:left;width:100%;font-size:15px;color:var(--muted);margin-bottom:12px}.rating-buttons{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;clear:both}.rating-buttons button{padding:12px 8px;min-height:76px;font-weight:400}.rating-buttons strong{display:block;font-size:17px;font-weight:650}.rating-buttons span{display:block;font-size:13px;font-weight:400;color:var(--muted);margin-top:3px}#rate-good{background:var(--blue-light);border-color:#a4badd}.finished h2{margin-top:19px}.finished .actions{margin-top:26px}.finished .actions button{flex:1}.method{border-bottom:1px solid var(--line)}.method:last-child{border-bottom:0}.method>summary{font-weight:600;padding:15px 0;font-size:17px}.method .method-content{padding:5px 0 20px}.method p,.method ol{font-size:17px}.method ol{margin:15px 0;padding-left:25px}.method li{padding-left:3px;margin:10px 0}.method-cue{color:var(--muted)}.method-label{color:var(--blue);font-size:14px;display:block;margin-bottom:4px}.method-example{margin:18px 0}.method-boundary{color:var(--muted);border-left:3px solid var(--line);padding-left:14px;margin-bottom:14px}.method .caption{font-size:14px}.source-links{display:flex;flex-direction:column;align-items:flex-start;gap:8px;margin-bottom:16px}.source-links a{padding:7px 0;min-height:44px}.diagram-wrap{margin:12px 0 6px}.diagram-wrap svg{display:block;max-width:440px;width:100%;height:auto;margin:12px auto}.diagram-wrap figcaption{font-size:17px;color:var(--muted);margin-top:12px}.figure-flow{display:grid;grid-template-columns:1fr 1fr;gap:8px 20px;list-style-position:inside;padding:0!important}.figure-flow li{margin:2px 0!important}.skip{position:fixed;top:-100px;left:16px;padding:12px 18px;background:white;z-index:2}.skip:focus{top:12px}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}footer{display:flex;justify-content:space-between;gap:16px;padding:28px 10px 38px;color:var(--muted);font-size:13px}
+@media(max-width:540px){.shell{width:calc(100% - 32px)}.masthead{padding:24px 0 22px}.mastnote{font-size:12px}h1{font-size:24px}.brand{gap:9px}.brand svg{width:25px;height:25px}.welcome{padding:30px 25px 26px}.welcome h2{font-size:25px;line-height:1.75;letter-spacing:0}.welcome>.primary{width:100%;min-width:0}.five-lines{margin-bottom:24px}.utilities{margin:20px 2px 0}.study-paper{padding:25px 23px 27px}.study-paper h2{font-size:23px;line-height:1.65}.answer{font-size:18px}.rating-buttons{gap:8px}.rating-buttons button{padding:11px 3px}.rating-buttons span{font-size:12px}.summary-hint{font-size:12px;padding-top:4px;max-width:45%;overflow-wrap:anywhere}.filter-grid{gap:12px}.actions>button{flex:1;padding-left:14px;padding-right:14px}.finished .actions{flex-direction:column}.utility>summary{min-height:60px}.figure-flow{gap:6px;font-size:17px}footer{padding:26px 2px 32px;font-size:12px}.notice{padding:12px 14px}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+
+/* Worked examples: one reasoning step at a time. */
+.recognize{font-size:17px;color:var(--muted);margin:-8px 0 24px!important}.lesson-problem{padding:18px 20px;border-left:3px solid var(--blue);background:var(--bg);margin-bottom:25px}.lesson-problem h3{font-size:15px;color:var(--blue);margin-bottom:10px}.lesson-problem p{font-size:17px;line-height:1.8}.lesson-problem p.caption{font-size:13px;margin-top:10px}.lesson-title{font-size:22px;line-height:1.6;margin:8px 0 16px;scroll-margin-top:18px}.lesson-text{font-size:18px;line-height:1.95}.lesson-figure{margin:22px 0 10px}.lesson-figure svg{display:block;width:100%;max-width:420px;height:auto;margin:auto}.lesson-figure figcaption{font-size:15px;color:var(--muted);margin-top:12px;line-height:1.8}.demo-table{border-collapse:collapse;table-layout:fixed;width:100%;font-size:17px;line-height:1.7}.demo-table th,.demo-table td{border-bottom:1px solid var(--line);padding:11px 8px;text-align:left;overflow-wrap:anywhere}.demo-table thead th{font-weight:650;color:var(--blue);background:var(--bg)}.demo-table tbody th{font-weight:500}.lesson-nav{display:flex;justify-content:space-between;gap:12px;margin:25px 0 12px}.lesson-nav button{min-height:48px}.lesson-nav button:last-child{flex:1;max-width:280px}.quiz-options{display:grid;gap:12px;margin:22px 0}.quiz-options button{text-align:left;font-size:17px;font-weight:500;padding:15px 18px;line-height:1.7}.quiz-options button[aria-pressed=true]{border:2px solid var(--blue);background:var(--blue-light);padding:14px 17px}.quiz-feedback{padding:18px;border-left:3px solid var(--blue);background:var(--blue-light);font-size:17px;line-height:1.85}.quiz-feedback.try-again{border-color:var(--amber);background:#fff6e9}.lesson-takeaway{font-size:17px;margin:20px 0 12px!important;font-weight:600}.condition-list{font-size:17px;padding-left:25px}.condition-list li{padding:8px 4px}.demo-sentence{text-align:center;padding:13px;background:var(--blue-light);font-size:20px}.demo-caption{text-align:center;font-size:15px;color:var(--muted);margin:10px 0}.dot-steps{display:grid;gap:12px}.dot-row{display:flex;align-items:center;gap:16px}.dot-row>span{flex:0 0 58px;font-size:15px;color:var(--muted)}.four-cells{display:grid;grid-template-columns:repeat(4,1fr);flex:1;border:1px solid #9bafce;background:#fff}.four-cells>span{height:44px;border-right:1px solid #9bafce;display:grid;place-items:center;font-size:24px}.four-cells>span:last-child{border-right:0}.four-cells i{display:block;background:var(--ink);border-radius:50%;width:17px;height:17px}#learn-from-summary{width:100%;margin-bottom:20px}#lesson-panel{scroll-margin-top:18px}#lesson-skip{margin-top:8px}
+@media(max-width:540px){.study-paper{padding:24px 20px}.lesson-title{font-size:21px}.lesson-text{font-size:17px}.lesson-problem{padding:15px 14px}.demo-table{font-size:16px}.demo-table th,.demo-table td{padding:10px 5px}.lesson-nav{gap:9px}.lesson-nav button{padding-left:13px;padding-right:13px;font-size:16px}.dot-row{gap:9px}.dot-row>span{flex-basis:50px}.four-cells>span{height:39px}#recall .actions{flex-direction:column}#recall .actions button{width:100%}.quiz-options button{padding:13px 14px}.quiz-options button[aria-pressed=true]{padding:12px 13px}}
+</style>
+</head>
+<body>
+  <a class="skip" href="#workspace">跳到练习</a>
+  <div class="shell">
+    <header class="masthead">
+      <div class="brand"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path d="M5 7h18v20H5z" fill="white" stroke="currentColor" stroke-width="1.8"/><path d="M9 3h17v20M10 13h8M10 18h5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><h1>五张就停</h1></div>
+      <span class="mastnote">行测 · 回忆卡</span>
+    </header>
+    <p id="storage-warning" class="notice warning" role="status" hidden></p>
+    <p id="notice" class="notice" role="status" hidden></p>
+    <main id="workspace" tabindex="-1">
+      <section id="home" aria-labelledby="home-title">
+        <div class="paper welcome">
+          <div class="five-lines" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+          <h2 id="home-title" tabindex="-1">先看懂，再自己做。<br>一轮 5 张，做完就停。</h2>
+          <p id="home-note">跟着一道小题，弄清每一步为什么。</p>
+          <button id="start" class="primary">开始这一轮</button>
+          <p id="availability" class="caption"></p>
+        </div>
+      </section>
+      <section id="study" aria-labelledby="question" hidden>
+        <div class="round-head"><span id="round-count"></span><button id="pause" class="text-button">先歇一会</button></div>
+        <div id="round-progress" class="round-progress" role="img"></div>
+        <article class="paper study-paper">
+          <p id="card-meta" class="card-meta"></p>
+          <h2 id="question" tabindex="-1"></h2>
+          <p id="recognize" class="recognize" hidden></p>
+          <div id="recall"><p id="recall-note" class="muted">先在心里说出答案，不急着翻。</p><div class="actions"><button id="learn" class="primary" hidden>看例题，一步步来</button><button id="reveal" class="primary">看答案</button></div></div>
+          <div id="answer-panel" hidden>
+            <section id="lesson-panel" aria-label="跟着例题理解" hidden>
+              <div id="lesson-walk">
+                <div class="lesson-problem"><h3>先看这道小题</h3><div id="lesson-problem"></div><p class="caption">自编教学示例</p></div>
+                <p id="lesson-progress" class="caption"></p>
+                <h3 id="lesson-title" class="lesson-title" tabindex="-1"></h3>
+                <p id="lesson-text" class="lesson-text"></p>
+                <div id="lesson-visual"></div>
+                <div class="lesson-nav"><button id="lesson-prev">上一步</button><button id="lesson-next" class="primary">下一步</button></div>
+              </div>
+              <div id="lesson-quiz" hidden>
+                <h3 id="quiz-title" class="lesson-title" tabindex="-1">换一道，你来试试</h3>
+                <p id="quiz-question" class="lesson-text"></p><div id="quiz-visual"></div>
+                <div id="quiz-options" class="quiz-options" role="group" aria-label="选择你的答案"></div>
+                <p id="quiz-feedback" class="quiz-feedback" role="status" hidden></p>
+                <p id="lesson-takeaway" class="lesson-takeaway" hidden></p>
+                <button id="lesson-review" class="text-button">回看刚才的例题</button>
+              </div>
+              <button id="lesson-skip" class="text-button">直接看方法要点</button>
+            </section>
+            <div id="summary-content">
+            <button id="learn-from-summary" class="primary" hidden>没看懂？跟着例题做一遍</button>
+            <h3 id="answer-title" class="section-label" tabindex="-1">对照一下</h3>
+            <p id="answer" class="answer"></p>
+            <p id="hook" class="hook"></p>
+            <div class="trap"><h3>别掉进这个坑</h3><p id="trap"></p></div>
+            <details id="diagram-panel" class="small-disclosure" hidden><summary>看图理解</summary><div id="diagram"></div></details>
+            </div>
+            <details id="source-panel" class="small-disclosure"><summary>讲义出处</summary><p id="card-source" class="source"></p><p class="caption">A 是题本，B 是解析；页码按 PDF 阅读器的实体页计。</p></details>
+            <fieldset id="ratings" class="ratings"><legend id="rating-prompt">刚才想起来了吗？</legend><div class="rating-buttons">
+              <button id="rate-again" data-rating="again"><strong>不会</strong><span>10 分钟后</span></button>
+              <button id="rate-hard" data-rating="hard"><strong>模糊</strong><span>明天再看</span></button>
+              <button id="rate-good" data-rating="good"><strong>会了</strong><span id="good-interval">1 天后</span></button>
+            </div></fieldset>
+          </div>
+        </article>
+      </section>
+      <section id="done" aria-labelledby="done-title" hidden>
+        <div class="paper welcome finished">
+          <svg width="48" height="48" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="22" fill="#EAF0FA"/><path d="m14 24 7 7 14-15" fill="none" stroke="#2455A6" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <h2 id="done-title" tabindex="-1">这一轮，到这里。</h2>
+          <p id="done-count"></p><p id="done-ratings" class="muted"></p>
+          <div class="actions"><button id="finish" class="primary">今天先到这里</button><button id="again">再来一轮</button></div>
+          <p class="caption">记住一点就有收获，随时可以停。</p>
+        </div>
+      </section>
+    </main>
+    <div class="utilities">
+      <details id="filters-panel" class="utility">
+        <summary>调整练习范围 <span id="filter-summary" class="summary-hint">全部</span></summary>
+        <div class="utility-body"><fieldset id="filters"><legend class="sr-only">练习范围</legend><div class="filter-grid"><label for="topic">题型<select id="topic"><option>全部</option><option>推理</option><option>图形</option><option>言语</option><option>词语</option></select></label><label for="kind">练什么<select id="kind"><option value="全部">自动安排</option><option>方法</option><option>必记</option><option>迁移</option></select></label></div></fieldset><p id="filter-note" class="caption">先复习到期卡，再按方法、必记、迁移加入新卡。</p></div>
+      </details>
+      <details id="methods-panel" class="utility"><summary>方法速查 <span class="summary-hint">10 套流程</span></summary><div id="methods" class="utility-body"></div></details>
+      <details id="backup-panel" class="utility">
+        <summary>进度与备份 <span id="progress-summary" class="summary-hint">尚未开始</span></summary>
+        <div class="utility-body"><p id="progress-description"></p><p class="caption">进度保存在当前浏览器。换浏览器、移动文件或清缓存前，请先导出备份。</p><div class="actions"><button id="export">导出进度</button><button id="import">导入进度</button><button id="clear" class="danger">清空进度</button></div><input id="import-file" type="file" accept=".json,application/json" hidden><details class="small-disclosure"><summary>复习时间怎么安排？</summary><p>不会：10 分钟后；模糊：次日；连续评为会了：依次 1、3、7、14 天后，之后保持 14 天。评为不会或模糊，会重新开始计数。</p><p class="caption">这是简易复习安排，评分靠自己的回忆情况，没有答对率或连续打卡要求。</p></details></div>
+      </details>
+      <details id="sources-panel" class="utility">
+        <summary>讲义与内容说明</summary><div class="utility-body"><div id="pdf-links" class="source-links"><a href="source-a.pdf" target="_blank" rel="noopener">A · 手写题本（45 页）</a><a href="source-b.pdf" target="_blank" rel="noopener">B · 讲义解析（40 页）</a></div><p id="pdf-web-note" hidden>网页版保留原讲义的实体页码，方便对照你自己保存的 PDF；未上传两份原始讲义。</p><p>10 套方法、40 张卡片，每张都配分步例题和随堂小题，共 40 套讲解。新增例题均为自编，用来解释方法。范围是判断推理与言语，没有补编数量关系课程。</p><p>流程帮助找证据，不能保证每题都有唯一答案。题干中的医学或新闻材料仅用于题内推理。</p><details class="small-disclosure"><summary>本次核对与纠错</summary><p>已修正“一笔画”的字形、古语“行成于思”的释义，核对 A 第 19 页的图形入口；A 第 21 页有图形题，并非空白。</p><p>保留连通前提、因果与相关的边界。不把“转折后必为中心”“既不…也不…必须反义”等口诀写回卡片。争议原题未作为标准例题；其余原题没有在本次逐题复审。</p></details></div>
+      </details>
+      <details id="mobile-panel" class="utility"><summary>在安卓手机上随时学 <span id="offline-status" class="summary-hint">离线准备</span></summary><div class="utility-body"><p id="mobile-instructions">联网打开手机版链接后，在浏览器菜单中选“添加到主屏幕”或“安装应用”。从微信收到链接时，先选择“在浏览器打开”。</p><p id="offline-description">等待显示“离线已就绪”后，例题与卡片就能在断网时打开；首次访问需要网络。</p><button id="install-app" hidden>添加到主屏幕</button><p class="caption">手机和电脑的进度分别保存，换设备可导出、导入进度。清除浏览器数据会影响离线内容和进度。</p></div></details>
+    </div>
+    <footer>一次只记一点。<span>离线可用，无需登录。</span></footer>
+    <noscript><p class="notice warning">请启用浏览器 JavaScript，才能翻卡和保存进度。</p></noscript>
+  </div>
+  <script id="study-data" type="application/json">{"methods":[{"id":"m01","topic":"推理","title":"逻辑推理 · 分析推理","cue":"题目给几个人、几种物品和几条条件，让你推出谁对应什么。讲义把它放在“逻辑判断—分析推理”。","steps":["总共只有红、蓝、黄。甲不能红、不能蓝，所以甲只能拿黄。这一步只用了甲的条件，不用同时记住所有人的话。","黄色已经给甲了，乙只能在红、蓝里选。再用“乙不拿红色”，就得到乙拿蓝色。你刚推出的结果，又帮你排掉了一个选择。","黄给甲、蓝给乙，红只能给丙。现在回头看：每人一个、颜色不重复、甲不红不蓝、乙不红，全部满足。"],"example":"自编小题：甲、乙、丙各拿一个气球，红、蓝、黄各用一次。 甲既不拿红色，也不拿蓝色。 乙不拿红色。三个人分别拿什么颜色？","source":"A PDF5；B PDF5","boundary":"这张卡讲的是条件都当真的人物安排题。如果题目说有人讲假话，还要先处理真假条件。","hook":"甲只剩黄色 → 乙不能再拿黄 → 继续用乙自己的条件。","level":"先跟着例题理解，再用不同条件练习。"},{"id":"m02","topic":"推理","title":"逻辑推理 · 加强与削弱","cue":"题目先给一个理由，再下一个结论，问哪句话让这个结论更站得住，或更站不住。","steps":["看到的是两组人的分数不同；认定的是差距由 App 造成。“一起出现”和“谁造成谁”不是同一句话。先别急着接受后面这个判断。","补充信息：使用 App 的这组人，在使用前就平均 85 分；另一组原本就平均 70 分。原来的差距已经存在，现在的差距便不能直接算作 App 的功劳。这会让原来的归因变得不可靠。","换一种补充信息：随机分组，开始时水平相近，学习时间和内容相同；使用 App 后，这组提升更多。两组在其他方面越可比，就越有理由把额外提升归到 App 上。这是增加支持，仍不是保证所有人都有效。"],"example":"自编小题：某次考试：用学习 App 的人平均 85 分，不用的人平均 70 分。 有人据此说：“是这个 App 提高了成绩。”这个判断可靠吗？","source":"A PDF7–12；B PDF7–13","boundary":"发现别的原因，只是让原来的解释不那么可靠，不等于证明 App 完全没用。","hook":"分数高是观察；“因为用了 App”是需要证明的解释。","level":"先跟着例题理解，再用不同条件练习。"},{"id":"m03","topic":"图形","title":"图形推理 · 先看哪里变了","cue":"给出几幅图，让你找共同的变化方式。先比较前后两幅的具体变化，再决定该看位置、线条还是数量。","steps":["三幅图都只有一个黑点，数个数一直等于 1，分不出下一幅。能看见的变化是：黑点从第 1 格走到第 2 格，又走到第 3 格。所以先研究移动。","第 1 格到第 2 格，是向右一格；第 2 格到第 3 格，也是向右一格。按这个重复的走法，下一次在第 4 格。不能前一步向右一格，后一步又随意换一种说法。","再看下面的小示意。假设本题明确要求“只留下两幅图都有的线”：两图都有外框，一幅多竖线，另一幅多横线，因此只留下外框。这就是比较哪些线保留、哪些线删去。真题没给规则时，要从已知组合找规则，不能直接默认求同。"],"example":"自编小题：先看一个只有黑点的小题：每幅图都有四个格子、一个黑点，黑点依次出现在第 1、2、3 格。 下一幅该把黑点画在哪一格？为什么？","source":"A PDF13–21；B PDF14–17；八入口顺序已目视核对A PDF19","boundary":"不能只解释最后两幅就选答案；同一种走法要能解释前面的图。若解释不了，就换一种观察方式。","hook":"黑点数量一直是 1，却逐格右移：此时该看位置。","level":"先跟着例题理解，再用不同条件练习。"},{"id":"m04","topic":"推理","title":"类比推理 · 词与词是什么关系","cue":"题目给“甲∶乙”或三个词，让你选关系相同、顺序也相同的一组。","steps":["麻雀是鸟的一种。这里比较的是“一种东西”和“它所属的大类”，不是“麻雀和鸟有关系”这么宽的一句话。","玫瑰是花的一种，说得通。车轮是汽车的一种，说不通；车轮只是汽车的一部分。“一种”和“一部分”不能混着用。","题干先写小类“麻雀”，再写大类“鸟”。所以“玫瑰∶花”同序，而“花∶玫瑰”反了。三词题同样要看每个位置放的是什么。"],"example":"自编小题：题干是“麻雀∶鸟”。 “玫瑰∶花”“车轮∶汽车”，哪一组和它的关系一样？","source":"A PDF22–23；B PDF18–21","boundary":"都能说“属于”还不够。这个词太宽，既能指分类，也能指组成。","hook":"关系要相同，每个词的位置也要对应。","level":"先跟着例题理解，再用不同条件练习。"},{"id":"m05","topic":"推理","title":"定义判断 · 一条一条对条件","cue":"题干先规定一个词在本题中的含义，再问哪种情况属于或不属于它。按题目给的条件判断。","steps":["这里要同时看：本社区居民、自愿、公共服务、不领取劳动报酬。“且”表示都得满足，不能只中两三条就算。","甲是居民、也自愿清扫公共道路，但他领了清扫工资，违反“不领取劳动报酬”。只要这一条不满足，就不符合本题给的定义。","如果乙也是本社区居民，自愿清扫公共道路，并且不领劳动报酬，才把四条条件都满足了。题目让你判断的是“是否符合这段定义”，不是“这个人值不值得表扬”。"],"example":"自编小题：本小题规定：社区志愿服务，是本社区居民自愿参加、且不领取劳动报酬的公共服务。 甲是本社区居民，自愿清扫公共道路，但领取了清扫工资。甲符合这个定义吗？","source":"A PDF25–27；B PDF22–24","boundary":"按本题写出的定义判断；别用平时对这个词的印象替代它。问“不属于”时，要找不符合的那项。","hook":"“做了好事”不等于满足题目规定的全部条件。","level":"先跟着例题理解，再用不同条件练习。"},{"id":"m06","topic":"言语","title":"中心理解与标题 · 这一段主要想说什么","cue":"题目问“主要说明”“意在强调”或“最合适的标题”。答案要概括全段，不能只抓一个例子。","steps":["晚上开放，让白天没空的人能来；靠近公交站，让居民更好到达；无障碍通道，让行动不便的人也能进入。三个例子都在说明“方便使用”。","它只说中了第一个例子。公交站和无障碍通道不属于“开放时间”，这个答案装不下后面两件事。字面说得没错，不代表概括了全段。","更完整的概括是“社区阅读空间应提高使用便利性”。如果题目改成选标题，也先看能不能概括这层意思，再比较是否简洁好记。"],"example":"自编小题：社区阅读空间应让居民使用起来更方便。有的把开放时间延至晚上，有的设在公交站旁，还有的增设无障碍通道。 这段话主要想说什么？","source":"A PDF29–35；B PDF26–30","boundary":"某个例子写得长，也不一定就是全文重点；“但、因此、应该”只能帮助观察，不能代替理解。","hook":"晚间开放、靠近公交、无障碍通道，共同说明“方便使用”。","level":"先跟着例题理解，再用不同条件练习。"},{"id":"m07","topic":"言语","title":"下文推断 · 还有哪一部分没讲","cue":"题目问“接下来最可能讲什么”。先看当前这段已经讲到哪一步。","steps":["顺序已经明说了：除尘、补页、装订。不需要自己猜作者一定会先讲原因还是先讲对策。","除尘讲过，补页也讲完，只剩装订。这是文章还没完成的内容。","最后出现“竹纸”，不等于下文就要介绍竹纸产业。它只是补页步骤里的细节；文章的明确安排还指向“装订”。"],"example":"自编小题：文章说，将依次介绍旧书修复的三个步骤：除尘、补页、装订。 上文已讲完除尘和补页，最后一句提到补页所用的竹纸。下一段优先讲什么？","source":"A PDF36–38；B PDF31–32","boundary":"没有明确顺序时，要结合全文判断可能的接法，不能硬套“永远先原因后对策”。","hook":"除尘、补页已经讲完，接下来还有装订。","level":"先跟着例题理解，再用不同条件练习。"},{"id":"m08","topic":"言语","title":"语句填空 · 填完后前后能不能接上","cue":"空缺是一整句话。选项单独读都可能通顺，要把它放回原段看。","steps":["“这类服务”说明前面应当出现一种服务。它不是泛泛要求一句好听的话，而是需要一个具体内容让“这类”有所指。","后面说工作人员上门，老人不用外出排队。前面填“证件上门办服务”，能直接解释这些好处；停车位就接不上。","“社区推出证件上门办服务。这类服务免去了老人出门排队的麻烦，工作人员会上门办理。”现在，指的是同一种服务，前后讲的是同一件事。"],"example":"自编小题：____。这类服务免去了老人出门排队的麻烦，工作人员会上门办理。 横线更适合填“社区推出证件上门办服务”，还是“社区需要增加停车位”？","source":"A PDF39–41；B PDF32–34","boundary":"单独看是一句好话，不代表放在这里合适；中间的横线也不一定只负责过渡。","hook":"后文说“这类上门服务”，前文就得交代相应的服务。","level":"先跟着例题理解，再用不同条件练习。"},{"id":"m09","topic":"言语","title":"语句排序 · 找到一句话依赖的前一句","cue":"题目把几句话打乱，让你重新排成一段。先找必须交代在前的内容。","steps":["是②里延长开放时间的安排。没有②，读者不知道①在说哪种安排，所以先把②放在①前面。","③用“因此”引出人数增加。②给出延时，①说明居民因此更方便来，放在③前面，原因和结果才衔接得上。","②延长开放→①方便晚下班居民→③晚间到访增加。每句都接着前一句说。遇到长题，先确定这样的小段，再和剩余句子比较。"],"example":"自编小题：① 这种安排方便了下班较晚的居民。 ② 社区把图书室关门时间从 18 点延至 21 点。 ③ 因此，图书室晚间的到访人数增加了。","source":"A PDF42–43；B PDF34–35","boundary":"重复同一个词，不等于两句必须紧挨；要能说清后一句为什么需要前一句。","hook":"先交代延长开放时间，再说“这种安排”带来的方便。","level":"先跟着例题理解，再用不同条件练习。"},{"id":"m10","topic":"言语","title":"逻辑填空 · 先说出空里需要的意思","cue":"横线里填词或成语。先用自己的话概括需要的意思，再比较词语。","steps":["“最后收尾”告诉你已接近结束；“仍要”“保持开工时的谨慎”告诉你不能到最后就松懈。需要的意思是：结束时也像开始时一样谨慎。","慎终如始：做事到了收尾，也像开始时一样谨慎。“终”和“始”恰好对应文中的最后阶段和开工时。不是看这个词熟不熟，而是看意思对不对。","百折不挠强调受挫不放弃，勇往直前强调勇敢前进；这句话没有重点讲失败或胆量。把慎终如始放回去，收尾、仍然、谨慎都照顾到了。"],"example":"自编小题：“工程已进入最后收尾阶段，我们仍要____，保持开工时的谨慎。” 在“慎终如始、百折不挠、勇往直前”中，哪一个更贴合？","source":"A PDF44–45；B PDF36–38","boundary":"同一个词换到另一个语境未必合适。多空题要让每个空都成立，不能只凭一个搭配决定。","hook":"“收尾仍像开始一样谨慎” → 慎终如始。","level":"先跟着例题理解，再用不同条件练习。"}],"cards":[{"id":"c01","topic":"推理","kind":"方法","q":"逻辑推理：人物条件很多，怎样一步步推出安排？","a":"先找只剩一种可能的人，把结果确定下来。再用这个结果排除其他人的选择；推完后，把安排放回每条原条件检查。","hook":"甲只剩黄色 → 乙不能再拿黄 → 继续用乙自己的条件。","trap":"这张卡讲的是条件都当真的人物安排题。如果题目说有人讲假话，还要先处理真假条件。","source":"A PDF4–6；B PDF4–6；页面例题与迁移练习为自编教学示例","lesson":{"type":"逻辑推理 · 分析推理","recognize":"题目给几个人、几种物品和几条条件，让你推出谁对应什么。讲义把它放在“逻辑判断—分析推理”。","problem":["甲、乙、丙各拿一个气球，红、蓝、黄各用一次。","甲既不拿红色，也不拿蓝色。","乙不拿红色。三个人分别拿什么颜色？"],"steps":[{"title":"先只看甲：排掉两个，就只剩一个","text":"总共只有红、蓝、黄。甲不能红、不能蓝，所以甲只能拿黄。这一步只用了甲的条件，不用同时记住所有人的话。","visual":"people-1"},{"title":"把甲的结果，带给乙","text":"黄色已经给甲了，乙只能在红、蓝里选。再用“乙不拿红色”，就得到乙拿蓝色。你刚推出的结果，又帮你排掉了一个选择。","visual":"people-2"},{"title":"最后一个不用猜，再检查一遍","text":"黄给甲、蓝给乙，红只能给丙。现在回头看：每人一个、颜色不重复、甲不红不蓝、乙不红，全部满足。","visual":"people-3"}],"quiz":{"question":"换一道：甲、乙、丙分别在周一、周二、周三值班，每天一人。乙在周二，甲不在周一。丙在哪天？","options":[{"text":"周一","correct":true,"feedback":"对。乙占周二，甲只能在周一、周三中选；甲不在周一，所以甲在周三，丙剩周一。每一步都能指出用了哪条条件。"},{"text":"周二","correct":false,"feedback":"周二已经安排乙，而题目规定每天只有一人。先把乙占用的周二划掉，再看甲。"},{"text":"周三","correct":false,"feedback":"如果丙占周三，甲就只能在周一，但题目说甲不在周一。这种安排撞上了原条件。"}]}}},{"id":"c02","topic":"推理","kind":"方法","q":"加强与削弱：为什么一句补充信息，会改变我们的判断？","a":"先分清题目实际观察到什么，又据此认定了什么。加入选项后，具体问：它让这个认定更有根据，还是暴露了另一种解释？","hook":"分数高是观察；“因为用了 App”是需要证明的解释。","trap":"发现别的原因，只是让原来的解释不那么可靠，不等于证明 App 完全没用。","source":"A PDF7–12；B PDF7–13；页面例题与迁移练习为自编教学示例","lesson":{"type":"逻辑推理 · 加强与削弱","recognize":"题目先给一个理由，再下一个结论，问哪句话让这个结论更站得住，或更站不住。","problem":["某次考试：用学习 App 的人平均 85 分，不用的人平均 70 分。","有人据此说：“是这个 App 提高了成绩。”这个判断可靠吗？"],"steps":[{"title":"分开两件事：看到了什么，认定了什么","text":"看到的是两组人的分数不同；认定的是差距由 App 造成。“一起出现”和“谁造成谁”不是同一句话。先别急着接受后面这个判断。","visual":"app-observation"},{"title":"为什么“他们原本就更优秀”会削弱？","text":"补充信息：使用 App 的这组人，在使用前就平均 85 分；另一组原本就平均 70 分。原来的差距已经存在，现在的差距便不能直接算作 App 的功劳。这会让原来的归因变得不可靠。","visual":"app-baseline"},{"title":"怎样的信息才会加强？","text":"换一种补充信息：随机分组，开始时水平相近，学习时间和内容相同；使用 App 后，这组提升更多。两组在其他方面越可比，就越有理由把额外提升归到 App 上。这是增加支持，仍不是保证所有人都有效。","visual":"app-comparison"},{"title":"遇到一个选项，就问它改变了什么","text":"“原本分数就高”让我们更怀疑是 App 的功劳；“其他条件相近，使用后提升更多”让我们更相信。仅说“App 图标是蓝色”，却没说明颜色如何影响学习，不能据此改变判断。","visual":"app-effects"}],"quiz":{"question":"图书室换灯后，借书的人变多了。负责人说：“是新灯吸引了读者。”哪条信息会让这个解释不那么可靠？","options":[{"text":"换灯的同时，图书室也延长了两小时开放时间","correct":true,"feedback":"对。多开放两小时，也可能让更多人有空来借书。现在不能把增长都归给换灯。这叫削弱原解释，但不等于证明灯光完全没作用。"},{"text":"新灯的灯罩是白色的","correct":false,"feedback":"只知道灯罩颜色，还不知道它怎样影响借书。它没有直接说明增长是不是换灯带来的。"},{"text":"这段时间，图书室的藏书数量没有变化","correct":false,"feedback":"这排除了“书变多了”这一种解释，更偏向帮助负责人缩小其他原因的范围，不是让原解释更可疑。"}]}}},{"id":"c03","topic":"图形","kind":"方法","q":"图形推理：先看哪里变了，再决定怎么找规律。","a":"先比较相邻两幅：是同一个东西换了位置，还是线条增减，或个数改变？选一个看得见的变化来试，再检查它是否能解释每一次变化。","hook":"黑点数量一直是 1，却逐格右移：此时该看位置。","trap":"不能只解释最后两幅就选答案；同一种走法要能解释前面的图。若解释不了，就换一种观察方式。","source":"A PDF13–20；B PDF14–17；页面例题与迁移练习为自编教学示例","lesson":{"type":"图形推理 · 先看哪里变了","recognize":"给出几幅图，让你找共同的变化方式。先比较前后两幅的具体变化，再决定该看位置、线条还是数量。","problem":["先看一个只有黑点的小题：每幅图都有四个格子、一个黑点，黑点依次出现在第 1、2、3 格。","下一幅该把黑点画在哪一格？为什么？"],"steps":[{"title":"黑点没增没减，变的是它在哪儿","text":"三幅图都只有一个黑点，数个数一直等于 1，分不出下一幅。能看见的变化是：黑点从第 1 格走到第 2 格，又走到第 3 格。所以先研究移动。","visual":"movement-question"},{"title":"用同一个走法，检查每一步","text":"第 1 格到第 2 格，是向右一格；第 2 格到第 3 格，也是向右一格。按这个重复的走法，下一次在第 4 格。不能前一步向右一格，后一步又随意换一种说法。","visual":"movement-answer"},{"title":"“看线条怎么变”，具体是在看什么？","text":"再看下面的小示意。假设本题明确要求“只留下两幅图都有的线”：两图都有外框，一幅多竖线，另一幅多横线，因此只留下外框。这就是比较哪些线保留、哪些线删去。真题没给规则时，要从已知组合找规则，不能直接默认求同。","visual":"common-lines"},{"title":"形状换了，也可以先试着数一数","text":"三角形、四边形、五边形看着不同，直边数却是 3、4、5。于是可以先试“每次多一条边”。看哪里变了，才决定怎么研究；不是拿到图就把所有术语背一遍。","visual":"edge-counts"}],"quiz":{"question":"箭头依次朝上、朝右、朝下。沿用前两次相同的转法，下一幅应朝哪边？","visual":"arrows-question","options":[{"text":"朝左","correct":true,"feedback":"对。上→右、右→下，每次都是顺时针转 90°；继续一次就是朝左。你比较的是转向和角度，不是箭头的数量。"},{"text":"朝上","correct":false,"feedback":"下→上要转 180°，跟前两次每次转 90°不一致。要让同一个走法解释每一次变化。"},{"text":"朝右","correct":false,"feedback":"下→右是逆时针转 90°，而前两次是顺时针。角度一样，还要检查方向是否一样。"}]}}},{"id":"c04","topic":"推理","kind":"方法","q":"类比推理：“是一种”和“是一部分”，为什么不能混？","a":"先把题干关系说准确，再用完全相同的关系检查选项。麻雀是鸟的一种，车轮却不是汽车的一种。最后还要核对前后顺序。","hook":"关系要相同，每个词的位置也要对应。","trap":"都能说“属于”还不够。这个词太宽，既能指分类，也能指组成。","source":"A PDF22–23；B PDF18–21；页面例题与迁移练习为自编教学示例","lesson":{"type":"类比推理 · 词与词是什么关系","recognize":"题目给“甲∶乙”或三个词，让你选关系相同、顺序也相同的一组。","problem":["题干是“麻雀∶鸟”。","“玫瑰∶花”“车轮∶汽车”，哪一组和它的关系一样？"],"steps":[{"title":"先把题干说成一句准确的话","text":"麻雀是鸟的一种。这里比较的是“一种东西”和“它所属的大类”，不是“麻雀和鸟有关系”这么宽的一句话。","visual":"kind-example"},{"title":"把同一句话，原样拿去检验选项","text":"玫瑰是花的一种，说得通。车轮是汽车的一种，说不通；车轮只是汽车的一部分。“一种”和“一部分”不能混着用。","visual":"kind-vs-part"},{"title":"顺序也不能反过来","text":"题干先写小类“麻雀”，再写大类“鸟”。所以“玫瑰∶花”同序，而“花∶玫瑰”反了。三词题同样要看每个位置放的是什么。","visual":"relation-order"}],"quiz":{"question":"“桌子∶锯子∶木材”按“制成的东西∶制作工具∶原材料”理解，下面哪组保持同样的次序？","options":[{"text":"衬衫∶剪刀∶布料","correct":true,"feedback":"对。衬衫是制成品，剪刀是工具，布料是原材料，三个位置都对应。"},{"text":"衬衫∶布料∶剪刀","correct":false,"feedback":"这些东西确实有关，但第二、第三个位置调换了。题干第二项是工具，这里第二项却是原材料。"}]}}},{"id":"c05","topic":"推理","kind":"方法","q":"定义判断：看着像同一回事，为什么也可能不符合？","a":"把题目定义里的必备条件逐条列出。选项有一条违反必要条件，就不符合；留下的选项还要把其他条件检查完。","hook":"“做了好事”不等于满足题目规定的全部条件。","trap":"按本题写出的定义判断；别用平时对这个词的印象替代它。问“不属于”时，要找不符合的那项。","source":"A PDF25–27；B PDF22–24；页面例题与迁移练习为自编教学示例","lesson":{"type":"定义判断 · 一条一条对条件","recognize":"题干先规定一个词在本题中的含义，再问哪种情况属于或不属于它。按题目给的条件判断。","problem":["本小题规定：社区志愿服务，是本社区居民自愿参加、且不领取劳动报酬的公共服务。","甲是本社区居民，自愿清扫公共道路，但领取了清扫工资。甲符合这个定义吗？"],"steps":[{"title":"把长定义，拆成必须同时满足的条件","text":"这里要同时看：本社区居民、自愿、公共服务、不领取劳动报酬。“且”表示都得满足，不能只中两三条就算。","visual":"definition-conditions"},{"title":"甲看起来在做好事，为什么仍然不符合？","text":"甲是居民、也自愿清扫公共道路，但他领了清扫工资，违反“不领取劳动报酬”。只要这一条不满足，就不符合本题给的定义。","visual":"definition-check"},{"title":"检验完整条件，不靠名字和印象","text":"如果乙也是本社区居民，自愿清扫公共道路，并且不领劳动报酬，才把四条条件都满足了。题目让你判断的是“是否符合这段定义”，不是“这个人值不值得表扬”。","visual":"definition-pass"}],"quiz":{"question":"仍按刚才的定义：哪一项属于社区志愿服务？","options":[{"text":"本社区居民丙，自愿免费为来访者指路","correct":true,"feedback":"对。居民、自愿、公共服务、不领劳动报酬，四条都满足。"},{"text":"外地游客丁，自愿免费为来访者指路","correct":false,"feedback":"丁的行为也值得肯定，但他不是“本社区居民”，不符合本小题限定的主体。现实中的志愿服务不能被这个自编定义一概限制。"},{"text":"本社区居民戊，自愿受雇管理公共停车场并领工资","correct":false,"feedback":"戊领取劳动报酬，违反定义中的明确条件。不能因为做的是公共事务就直接选。"}]}}},{"id":"c06","topic":"言语","kind":"方法","q":"中心理解：怎样区分整段的意思和其中一个例子？","a":"看看几个例子合起来在说明什么。答案要能覆盖这些例子共同支持的意思，不能只复述其中一件事，也不能加入文段没说的主张。","hook":"晚间开放、靠近公交、无障碍通道，共同说明“方便使用”。","trap":"某个例子写得长，也不一定就是全文重点；“但、因此、应该”只能帮助观察，不能代替理解。","source":"A PDF29–35；B PDF26–30；页面例题与迁移练习为自编教学示例","lesson":{"type":"中心理解与标题 · 这一段主要想说什么","recognize":"题目问“主要说明”“意在强调”或“最合适的标题”。答案要概括全段，不能只抓一个例子。","problem":["社区阅读空间应让居民使用起来更方便。有的把开放时间延至晚上，有的设在公交站旁，还有的增设无障碍通道。","这段话主要想说什么？"],"steps":[{"title":"把三个例子分别翻成大白话","text":"晚上开放，让白天没空的人能来；靠近公交站，让居民更好到达；无障碍通道，让行动不便的人也能进入。三个例子都在说明“方便使用”。","visual":"reading-examples"},{"title":"为什么“应该延长开放时间”不够？","text":"它只说中了第一个例子。公交站和无障碍通道不属于“开放时间”，这个答案装不下后面两件事。字面说得没错，不代表概括了全段。"},{"title":"把共同意思留住，删去具体做法","text":"更完整的概括是“社区阅读空间应提高使用便利性”。如果题目改成选标题，也先看能不能概括这层意思，再比较是否简洁好记。"}],"quiz":{"question":"“公园要照顾不同人群：给孩子留游乐区，给老人设休息椅，给健身者建步道。”哪项最能概括全段？","options":[{"text":"公园应满足不同人群的需要","correct":true,"feedback":"对。孩子、老人、健身者三项都能包含在这个概括里。"},{"text":"公园应增加老人休息椅","correct":false,"feedback":"这是其中一个做法，装不下游乐区和健身步道。它属于细节，不能代替全段的意思。"},{"text":"公园应全面停止商业经营","correct":false,"feedback":"文段没有谈商业经营。即使你赞同这个主张，也不能把自己的想法加进作者的话里。"}]}}},{"id":"c07","topic":"言语","kind":"方法","q":"下文推断：末尾有很多词，下一段究竟接着讲什么？","a":"先确认文章准备讲什么、已经讲到哪一步。明确列出顺序而尚未讲完的内容，通常最值得优先考虑；不要只抓最后一个词。","hook":"除尘、补页已经讲完，接下来还有装订。","trap":"没有明确顺序时，要结合全文判断可能的接法，不能硬套“永远先原因后对策”。","source":"A PDF36–38；B PDF31–32；页面例题与迁移练习为自编教学示例","lesson":{"type":"下文推断 · 还有哪一部分没讲","recognize":"题目问“接下来最可能讲什么”。先看当前这段已经讲到哪一步。","problem":["文章说，将依次介绍旧书修复的三个步骤：除尘、补页、装订。","上文已讲完除尘和补页，最后一句提到补页所用的竹纸。下一段优先讲什么？"],"steps":[{"title":"先把文章答应要讲的事列出来","text":"顺序已经明说了：除尘、补页、装订。不需要自己猜作者一定会先讲原因还是先讲对策。","visual":"book-plan"},{"title":"划掉已经讲完的部分","text":"除尘讲过，补页也讲完，只剩装订。这是文章还没完成的内容。","visual":"book-left"},{"title":"不要被最后一个词带跑","text":"最后出现“竹纸”，不等于下文就要介绍竹纸产业。它只是补页步骤里的细节；文章的明确安排还指向“装订”。"}],"quiz":{"question":"文章说“下面将依次介绍选种、育苗、移栽”，随后详细讲完了选种。接下来最自然的是？","options":[{"text":"介绍育苗的方法","correct":true,"feedback":"对。选种已讲完，按已经给出的顺序，下一项是育苗。"},{"text":"重新介绍同一套选种方法","correct":false,"feedback":"这部分已经讲完，没有新提示时，重复上文不如接着讲下一项自然。"},{"text":"直接讨论农产品销售","correct":false,"feedback":"销售可能有价值，但没有接住文段列出的下一步，跳出了当前安排。"}]}}},{"id":"c08","topic":"言语","kind":"方法","q":"语句填空：选项都通顺，怎样知道哪句放进去才合适？","a":"先看横线前后在讲哪件事，尤其“这、因此、但是”在接什么。把选项放回去：它能承接前文，又能解释后文，才适合留下。","hook":"后文说“这类上门服务”，前文就得交代相应的服务。","trap":"单独看是一句好话，不代表放在这里合适；中间的横线也不一定只负责过渡。","source":"A PDF39–41；B PDF32–34；页面例题与迁移练习为自编教学示例","lesson":{"type":"语句填空 · 填完后前后能不能接上","recognize":"空缺是一整句话。选项单独读都可能通顺，要把它放回原段看。","problem":["____。这类服务免去了老人出门排队的麻烦，工作人员会上门办理。","横线更适合填“社区推出证件上门办服务”，还是“社区需要增加停车位”？"],"steps":[{"title":"看后一句在接谁的话","text":"“这类服务”说明前面应当出现一种服务。它不是泛泛要求一句好听的话，而是需要一个具体内容让“这类”有所指。"},{"title":"再用“上门办理”缩小范围","text":"后面说工作人员上门，老人不用外出排队。前面填“证件上门办服务”，能直接解释这些好处；停车位就接不上。","visual":"sentence-fit"},{"title":"把整句放回去读","text":"“社区推出证件上门办服务。这类服务免去了老人出门排队的麻烦，工作人员会上门办理。”现在，指的是同一种服务，前后讲的是同一件事。"}],"quiz":{"question":"“社区开展家电维修进小区活动。____。于是，不少居民把闲置的坏家电拿来修理。”哪句话最能接上？","options":[{"text":"居民不用出小区就能找到维修师傅","correct":true,"feedback":"对。它解释活动带来的方便，又能接住“于是有人拿来修理”这个结果。前后都通了。"},{"text":"家电的品牌种类越来越多","correct":false,"feedback":"虽然也提到家电，却没说明进小区的活动带来什么变化，也解释不了后面的“于是”。同一个词出现，不等于接得上。"},{"text":"社区准备重新修建围墙","correct":false,"feedback":"修围墙和这次维修活动之间没有题面给出的联系，插进来会换话题。"}]}}},{"id":"c09","topic":"言语","kind":"方法","q":"语句排序：第一句拿不准，怎样先确定一小段？","a":"先问“这件事”指哪件事、“因此”根据什么得出。把被指的事、作为依据的信息放到前面，先排出一小段，再读整段是否连贯。","hook":"先交代延长开放时间，再说“这种安排”带来的方便。","trap":"重复同一个词，不等于两句必须紧挨；要能说清后一句为什么需要前一句。","source":"A PDF42–43；B PDF34–35；页面例题与迁移练习为自编教学示例","lesson":{"type":"语句排序 · 找到一句话依赖的前一句","recognize":"题目把几句话打乱，让你重新排成一段。先找必须交代在前的内容。","problem":["① 这种安排方便了下班较晚的居民。","② 社区把图书室关门时间从 18 点延至 21 点。","③ 因此，图书室晚间的到访人数增加了。"],"steps":[{"title":"问一句：①的“这种安排”是什么？","text":"是②里延长开放时间的安排。没有②，读者不知道①在说哪种安排，所以先把②放在①前面。","visual":"order-pair"},{"title":"③的结果，需要前面的解释","text":"③用“因此”引出人数增加。②给出延时，①说明居民因此更方便来，放在③前面，原因和结果才衔接得上。","visual":"order-complete"},{"title":"最后整段读一遍，不只认重复词","text":"②延长开放→①方便晚下班居民→③晚间到访增加。每句都接着前一句说。遇到长题，先确定这样的小段，再和剩余句子比较。"}],"quiz":{"question":"① 因此，这次回收活动值得继续办。② 一周回收旧书 200 册，超过原定 100 册的目标。③ 社区试办了一周旧书回收活动。哪种顺序更自然？","options":[{"text":"③ → ② → ①","correct":true,"feedback":"对。先交代试办活动，再报告结果，最后依据结果评价。①的“这次活动”和“因此”都有了前文依据。"},{"text":"② → ③ → ①","correct":false,"feedback":"②已经在报告这一周的活动结果，③却又回头第一次介绍活动。先介绍，再报结果，衔接更自然。"},{"text":"① → ③ → ②","correct":false,"feedback":"开头直接说“因此值得继续办”，读者还不知道是哪次活动、凭什么值得。应先把活动和成绩交代出来。"}]}}},{"id":"c10","topic":"言语","kind":"方法","q":"逻辑填空：几个词都认识，为什么还是不会选？","a":"先暂时不看选项，用白话说出空里需要的意思。再找词义最贴合的一个，最后放回原文检查，而不是选自己最熟悉的词。","hook":"“收尾仍像开始一样谨慎” → 慎终如始。","trap":"同一个词换到另一个语境未必合适。多空题要让每个空都成立，不能只凭一个搭配决定。","source":"A PDF44–45；B PDF36–38；页面例题与迁移练习为自编教学示例","lesson":{"type":"逻辑填空 · 先说出空里需要的意思","recognize":"横线里填词或成语。先用自己的话概括需要的意思，再比较词语。","problem":["“工程已进入最后收尾阶段，我们仍要____，保持开工时的谨慎。”","在“慎终如始、百折不挠、勇往直前”中，哪一个更贴合？"],"steps":[{"title":"暂时不看成语，只看前后句","text":"“最后收尾”告诉你已接近结束；“仍要”“保持开工时的谨慎”告诉你不能到最后就松懈。需要的意思是：结束时也像开始时一样谨慎。"},{"title":"再找正好表达这个意思的词","text":"慎终如始：做事到了收尾，也像开始时一样谨慎。“终”和“始”恰好对应文中的最后阶段和开工时。不是看这个词熟不熟，而是看意思对不对。","visual":"word-evidence"},{"title":"另外两个词为什么不如它？","text":"百折不挠强调受挫不放弃，勇往直前强调勇敢前进；这句话没有重点讲失败或胆量。把慎终如始放回去，收尾、仍然、谨慎都照顾到了。"}],"quiz":{"question":"“面对多次失败，他仍不放弃，终于完成了研究。”这里更适合用哪个词形容他？","options":[{"text":"百折不挠","correct":true,"feedback":"对。这次的线索换成“多次失败”和“不放弃”，强调受挫后坚持。方法相同，但不能把上一题的词硬套过来。"},{"text":"慎终如始","correct":false,"feedback":"它强调收尾时仍谨慎。这句话没有比较开头和结尾，重点是多次受挫仍坚持。"},{"text":"不约而同","correct":false,"feedback":"它说多人没有商量却作出一致行动。题目只讲一个人面对挫折，没有多人一致的线索。"}]}}},{"id":"k01","topic":"推理","kind":"必记","q":"类比推理 · 一种还是一部分：它们的关系真的一样吗？","a":"先说“A 本身就是一种 B”，再试“A 只是组成 B 的一部分”。苹果本身是水果，车轮本身不是汽车。","hook":"先把“属于”换成一句更准确的话。","trap":"方向也要相同。“水果∶苹果”和“苹果∶水果”不是同一个顺序。","source":"A PDF22–23；B PDF19–20；本页具体例子为自编讲解","lesson":{"type":"类比推理 · 一种还是一部分","recognize":"把两个词放进“一种”和“一部分”这两句话，看看哪句话准确。","problem":["“苹果∶水果”和“车轮∶汽车”都能含糊地说成“属于”。","它们的关系真的一样吗？"],"steps":[{"title":"先看苹果本身是什么","text":"一个苹果本身就是一种水果。把水果分成苹果、梨、香蕉等小类，这叫“种属关系”。"},{"title":"再看一个车轮本身是什么","text":"一个车轮本身不是一辆汽车。它和发动机、车身等组成汽车，这叫“组成关系”。","visual":"kind-vs-part"},{"title":"所以不能只用“属于”检验","text":"“属于”把两种不同意思混到了一起。要说完整：苹果是水果的一种；车轮是汽车的一部分。"}],"quiz":{"question":"“小说∶文学作品”更接近哪一组？","options":[{"text":"书页∶书","correct":false,"feedback":"一张书页只是书的一部分，不能说它本身就是一本书。这里是组成关系。"},{"text":"玫瑰∶花","correct":true,"feedback":"对。小说本身就是一种文学作品，玫瑰本身就是一种花。两组都是小类和大类。"}]}}},{"id":"k02","topic":"推理","kind":"必记","q":"类比推理 · 两类人有没有部分重合：“老师”和“会游泳的人”是什么关系？","a":"要找全三种例子：既是老师又会游泳、是老师但不会游泳、会游泳但不是老师。三种都有，才叫部分交叉。","hook":"有重合，还得检查两边是否各有剩下的部分。","trap":"如果一类全部落在另一类里面，就是包含，不能只因有重合就叫交叉。","source":"A PDF23；B PDF18–19；本页具体例子为自编讲解","lesson":{"type":"类比推理 · 两类人有没有部分重合","recognize":"“交叉”就是有些对象同时属于两类，但两类各自也有不重合的对象。","problem":["只看下面四人：甲是会游泳的老师；乙是不会游泳的老师；丙是会游泳的厨师；丁是不会游泳的厨师。","“老师”和“会游泳的人”是什么关系？"],"steps":[{"title":"先找到两边都属于的人","text":"甲既是老师又会游泳，所以两类不是完全分开的。"},{"title":"再找只属于一边的人","text":"乙是老师但不会游泳；丙会游泳但不是老师。这说明谁也没有把另一类全部包含进去。","visual":"cross-people"},{"title":"三种人都存在，才是部分重合","text":"甲说明两类有重合，乙和丙说明两类又各有自己的部分。三项一起看，才确定这是交叉关系。"}],"quiz":{"question":"“苹果”和“水果”也叫交叉吗？","options":[{"text":"不叫，苹果这一类全部属于水果","correct":true,"feedback":"对。没有“是苹果却不是水果”的例子，缺少只在苹果这一侧的部分，因此是包含关系。"},{"text":"叫，因为苹果和水果有共同对象","correct":false,"feedback":"有共同对象还不够。包含关系也有共同对象，还要检查两边是否各有不重合的对象。"}]}}},{"id":"k03","topic":"推理","kind":"必记","q":"类比推理 · 有没有第三种可能：两组为什么不一样？","a":"先看两类能否同时成立，再看有没有第三种。互相排斥且分完所有情况，叫矛盾；互相排斥但还有第三种，叫反对。","hook":"红与非红分完了；红与蓝还漏着黄色。","trap":"一定先固定讨论范围和同一个方面。多色衣服不能直接当成“单一颜色”来套这个例子。","source":"A PDF22–23；此例为自编；本页具体例子为自编讲解","lesson":{"type":"类比推理 · 有没有第三种可能","recognize":"这里比较两种互相排斥的说法，重点是它们能不能把所有情况说完。","problem":["只讨论一张涂了单一颜色的卡片。第一组是“红色／不是红色”，第二组是“红色／蓝色”。","两组为什么不一样？"],"steps":[{"title":"红色和非红色，已经把情况分完","text":"这张卡要么是红色，要么不是红色，没有第三类；它也不能在同一意义上既红又非红。这样的关系叫矛盾。"},{"title":"红色和蓝色，还没把情况分完","text":"卡片不能同时是纯红和纯蓝，但还可能是黄色。因为有第三种可能，红和蓝叫反对关系。"},{"title":"用一个第三种情况检查","text":"黄色既不是红色，也不是蓝色，却仍然属于“不是红色”。这就把两组的差别显出来了。"}],"quiz":{"question":"只按整数分类，“偶数／非偶数”和“偶数／正奇数”，哪一组把整数分完了？","options":[{"text":"偶数／正奇数","correct":false,"feedback":"还可能是负奇数。−3 既不是偶数，也不是正奇数，所以还有第三种情况。"},{"text":"偶数／非偶数","correct":true,"feedback":"对。每个整数不是偶数就是非偶数。第二组漏掉了负奇数，例如 −3。"}]}}},{"id":"k04","topic":"推理","kind":"必记","q":"逻辑推理 · 有门票就一定能进吗：现在小李有有效门票，只凭这条规定，能断定他一定会获准入场吗？","a":"获准入场必须有有效票；没有票，按规定就不能获准。有票只过了一项必要要求，原话没有保证其他要求也都满足。","hook":"少了票肯定不行；有票不代表只凭这一条就够了。","trap":"只按本题这条规定推理，不自行把“只有持票才放行”改成“只要持票就放行”。","source":"A PDF22条件关系；规则补充；本页具体例子为自编讲解","lesson":{"type":"逻辑推理 · 有门票就一定能进吗","recognize":"“只有……才……”说的是少了就不行的条件，没有说满足这一条就够了。","problem":["本题规定：只有持有效门票的人，才能获准入场。这项规定严格执行。","现在小李有有效门票，只凭这条规定，能断定他一定会获准入场吗？"],"steps":[{"title":"获准入场的人，必须满足持票要求","text":"从“获准入场”往回看，一定能推出“有有效门票”。如果没有有效票，就根本过不了这项要求。"},{"title":"有票的人，却不一定已经满足全部要求","text":"题目只说有票是必需的，没有说有票就够了。比如场馆还可能要求通过安检。这里不是认定一定有安检，而是用一种可能情况说明：原规定没有保证放行。"},{"title":"把能推和不能推的方向说清楚","text":"能推：获准入场→有有效票。不能推：有有效票→一定获准入场。“必要条件”就是少了不行，但有了未必足够的条件。"}],"quiz":{"question":"仍按同一规定：小王现在没有有效门票，能确定什么？","options":[{"text":"只要愿意排队，现在就能获准入场","correct":false,"feedback":"排队不能代替有效门票。题目把持票写成必须满足的条件，不能用另一种行为跳过它。"},{"text":"他现在不能获准入场","correct":true,"feedback":"对。持有效票是获准入场必须满足的要求。小王连这条都没满足，按规定现在就不能获准入场。"}]}}},{"id":"k05","topic":"图形","kind":"必记","q":"图形推理 · 一笔画为什么先找起点和终点：为什么它能一笔画，而 T 字图形不能？","a":"线条先要连通。经过中间点时，进入和离开消耗两条线；一笔的两个端点才允许剩单数。因此奇点数只能是 0 或 2。","hook":"奇点就是接出奇数条线的点，不是看它长得尖不尖。","trap":"0 或 2 个奇点的规则有连通前提；不连通的两部分不能靠抬笔跳过去还叫一笔。","source":"A PDF20；B PDF17；图论条件补全；本页具体例子为自编讲解","lesson":{"type":"图形推理 · 一笔画为什么先找起点和终点","recognize":"这里的一笔画指笔不抬起，每条线恰好画一次；可以经过同一个点多次。","problem":["一条 V 形折线，左右各一个端点，中间一个拐点。","为什么它能一笔画，而 T 字图形不能？"],"steps":[{"title":"先保证线条连在一起","text":"V 形两段线在拐点连接。笔从左端走到中间，再走到右端，不需要跳到另一个分开的图上。","visual":"stroke-v"},{"title":"看每个点接了几条线","text":"V 的两个端点各接一条线，是奇数，叫“奇点”；中间接两条线，是偶数。经过中间时，一条线进入、一条线离开，正好配成一对。"},{"title":"只有起终点可以不成对","text":"一笔只有一个起点、一个终点，所以连通图只能有 0 或 2 个奇点。T 字三个外端点各接一条线，中间接三条，共 4 个奇点，一笔顾不过来。","visual":"stroke-t"}],"quiz":{"question":"一个闭合三角形，三个顶点都各接两条线。能一笔画吗？","options":[{"text":"不能，因为没有奇点就没有起点","correct":false,"feedback":"没有奇点不等于不能出发。闭合路线可以任选一点出发，再回到同一点。"},{"text":"能，绕一圈回到起点","correct":true,"feedback":"对。它连在一起，奇点数是 0，可以从某点出发沿三条边绕回原点，笔不用抬起。"}]}}},{"id":"k06","topic":"图形","kind":"必记","q":"图形推理 · 四个奇点为什么至少两笔：最少要几笔才能画完？","a":"有边的连通图：奇点数除以 2，若结果为 0 则仍用 1 笔。分开的各块分别算，再把笔数相加。","hook":"T 字：横线一笔、竖线一笔，正好看见 4 个奇点对应 2 笔。","trap":"不能省略连通前提；孤立的小点是否算一笔，还要看题目对“画图”的具体要求。","source":"A PDF20；B PDF17；图论规则补全；本页具体例子为自编讲解","lesson":{"type":"图形推理 · 四个奇点为什么至少两笔","recognize":"允许抬笔，但每条线仍只能画一次。最少几笔，要看有多少个起止端点需要安排。","problem":["T 字图形的三个外端点各接一条线，中间接三条线，共有 4 个奇点。","最少要几笔才能画完？"],"steps":[{"title":"每一笔只有两个起止端点","text":"一笔只有开头和结尾。图里有 4 个需要作为起止位置的奇点，一笔的两个位置不够，至少要两笔。","visual":"stroke-t"},{"title":"实际画出两笔，证明两笔够用","text":"第一笔从左端经过中间到右端，画完整条横线；第二笔从中间到下端，画竖线。没有重复任何一段，两笔确实能完成。","visual":"stroke-t-paths"},{"title":"再推广到更多奇点和多个部分","text":"有边的连通图，奇点数除以 2 就是所需笔数；如果奇点是 0，也仍要一笔。若图分成几块，分别计算后相加。"}],"quiz":{"question":"一张连通线图有 6 个奇点，按不重复线条的规则最少几笔？","options":[{"text":"6 笔","correct":false,"feedback":"一笔能从一个奇点出发，在另一个奇点结束，不是每个奇点都单独占一笔。"},{"text":"1 笔","correct":false,"feedback":"一笔只能有两个起止端点，不能满足 6 个奇点的要求。"},{"text":"3 笔","correct":true,"feedback":"对。6 个奇点要安排成起止端点，一笔对应一对，因此最少 6÷2＝3 笔。这里已经给了连通条件。"}]}}},{"id":"k07","topic":"图形","kind":"必记","q":"图形推理 · 对折与转半圈是两种检查：它有左右对称，就一定能转半圈后重合吗？","a":"沿一条线反射后重合，叫轴对称；绕一个点转 180°后重合，叫中心对称。等腰三角形说明前者不保证后者。","hook":"同一张图，分别做“照镜子”和“转半圈”两次检查。","trap":"对折检查的是整个图，不只是外框；内部小线条、黑点也要一起重合。","source":"A PDF20；B PDF17；本页具体例子为自编讲解","lesson":{"type":"图形推理 · 对折与转半圈是两种检查","recognize":"轴对称看像不像照镜子，中心对称看转半圈后能不能和原图重合。","problem":["一个尖头朝上的等腰三角形，两条斜边一样长。","它有左右对称，就一定能转半圈后重合吗？"],"steps":[{"title":"沿中间竖线对折试一试","text":"左右两半形状相同，沿中间竖线对折能够合上。这叫轴对称，竖线就是对称轴。","visual":"symmetry-triangle"},{"title":"再把整张图转半圈","text":"尖头朝上会变成尖头朝下，和原图不重合。因此这个三角形没有中心对称。","visual":"symmetry-halfturn"},{"title":"两项可以分别成立","text":"正方形既能沿合适的线对折，也能转半圈后重合。做题时分别检查，不能用“有一种对称”代替另一种检查。"}],"quiz":{"question":"普通长方形绕中心旋转 180°，能与原图重合吗？","options":[{"text":"能，所以它有中心对称","correct":true,"feedback":"对。转半圈后，上下边、左右边互换位置，但整张图占据同样的位置。"},{"text":"不能，因为它不是正方形","correct":false,"feedback":"中心对称不要求四条边等长。普通长方形转半圈也能重合，只是转 90°通常不行。"}]}}},{"id":"k08","topic":"图形","kind":"必记","q":"图形推理 · 转动和镜面翻转哪里不同：把它转半圈，和把它左右照镜子，结果一样吗？","a":"别只跟踪一个部分。F 转半圈后长横线到底部；左右镜面翻转后，长横线仍在顶部。多个不对称细节一起看，才容易分清。","hook":"竖线换边还不够，再看长横线有没有上下交换。","trap":"这个例子区分的是平面旋转和左右反射；对称图形或单个对称箭头可能无法提供足够区别。","source":"A PDF13–18；B PDF14–16；判别补充；本页具体例子为自编讲解","lesson":{"type":"图形推理 · 转动和镜面翻转哪里不同","recognize":"找一个不对称的记号，比较它各个部分的位置，别只看外框。","problem":["拿字母 F 作记号：竖线在左，两条横线向右伸，顶端横线更长。","把它转半圈，和把它左右照镜子，结果一样吗？"],"steps":[{"title":"转半圈时，所有部分一起转","text":"竖线会转到右边，原来顶部的长横线会转到底部。不能只看到竖线换边，就认定发生了镜面翻转。","visual":"mirror-f"},{"title":"左右照镜子，只把左右交换","text":"竖线也到了右边，但顶部的长横线仍在顶部，只是向左伸。这和转半圈的结果不同。"},{"title":"所以要同时盯两个位置","text":"同时看“竖线在哪边”和“长横线在上还是在下”，就能区分这两个变化。原图如果本来很对称，这种区别可能看不出来。"}],"quiz":{"question":"在这个 F 的例子里，变换后竖线在右，长横线仍在上，更符合哪一种变化？","options":[{"text":"在平面上旋转 180°","correct":false,"feedback":"转 180°时上下也交换，原来顶部的长横线应该到底部，和这里的结果不符。"},{"text":"左右镜面翻转","correct":true,"feedback":"对。左右交换，但上下位置没有交换，所以长横线仍然在顶部。"}]}}},{"id":"k09","topic":"词语","kind":"必记","q":"词语辨析 · 谨慎和坚持各强调什么：这句话为什么更接近“慎终如始”？","a":"慎终如始：收尾仍像开始一样谨慎。步步为营：每一步谨慎。绵绵用力：持续努力。行稳致远：稳妥推进以走得长远。","hook":"先看句子强调哪个细节，再在相近的词里选。","trap":"这些词的使用范围可能重叠，填空应比较谁更准确表达当前句子的重点。","source":"A PDF44第1题；B PDF36；本页具体例子为自编讲解","lesson":{"type":"词语辨析 · 谨慎和坚持各强调什么","recognize":"几个词都能用于做事，但关注的是不同细节：收尾、每一步、持续、长远。","problem":["工程已经进入最后验收，负责人提醒：“最后也要像开工时那样小心。”","这句话为什么更接近“慎终如始”？"],"steps":[{"title":"先抓住句子比较的两个时点","text":"句子拿“最后”和“开工时”作比较。“慎终如始”就是到了结束，也像开始时一样谨慎。"},{"title":"另外三个词各自强调别的事","text":"步步为营强调每一步都谨慎稳妥；绵绵用力强调持续努力；行稳致远强调走得稳，才能走得长远。它们不都在比较开头和结尾。"},{"title":"根据句子给的重点选","text":"这句特意说“最后也像开工时”，直接贴合慎终如始。若只说十年持续投入，绵绵用力会更贴合。"}],"quiz":{"question":"“十年来一直投入精力，持续推进这项工作”更直接强调哪个词的意思？","options":[{"text":"慎终如始","correct":false,"feedback":"题目没有特别比较收尾和开头的谨慎程度，重点是长期持续投入。"},{"text":"绵绵用力","correct":true,"feedback":"对。核心线索是十年、持续、一直投入，强调努力不断。"}]}}},{"id":"k10","topic":"词语","kind":"必记","q":"词语辨析 · 低估自己与不愿进步：两个人分别是在低估还是高估自己？","a":"妄自菲薄是低估自己，妄自尊大是高估自己；固步自封是守旧不进，甘居人后是甘愿落在别人后面。","hook":"问清句子在说“怎样看自己”，还是“愿不愿进步”。","trap":"不要仅凭“既不……也不……”就断言两个词必须反义，还要看具体意思。","source":"A PDF44第2题；B PDF36；本页具体例子为自编讲解","lesson":{"type":"词语辨析 · 低估自己与不愿进步","recognize":"有的词在评价自我，有的词在说面对进步的态度，不要混成一种“消极”。","problem":["甲明明有能力，却总说“我什么都不行”；乙认为“天下只有我最厉害”。","两个人分别是在低估还是高估自己？"],"steps":[{"title":"甲把自己看得过低","text":"不合理地看轻自己叫妄自菲薄。“菲薄”在这里是轻视，不是衣服薄。乙把自己看得过高，叫妄自尊大。"},{"title":"再看两个关于进步的词","text":"固步自封：守着旧经验，不愿改进；甘居人后：甘愿处在别人后面。它们不是单纯在评价自己有多少能力。"},{"title":"把具体行为对上，不只看好坏","text":"“不肯学新办法”重点是守旧；“不合理地说自己一无是处”重点是自我贬低。两个都可能不利，却不是同一个意思。"}],"quiz":{"question":"“只守着过去的经验，拒绝了解更好的新办法”更接近哪个词？","options":[{"text":"固步自封","correct":true,"feedback":"对。句子在说守旧、不愿改进，而不是在说把自己能力看得很低。"},{"text":"妄自菲薄","correct":false,"feedback":"妄自菲薄是低估自己。这里没有说他觉得自己差，而是说他不愿更新方法。"}]}}},{"id":"k11","topic":"词语","kind":"必记","q":"词语辨析 · 景色的动势、颜色和范围：为什么两句不必填同一个词？","a":"一泻千里侧重奔流气势；一碧万顷侧重碧绿广阔；一望无际侧重看不到边。选哪个，要看原句强调哪一点。","hook":"看不到边，不自动等于碧绿色。","trap":"词义可能有引申用法，仍要用具体语境检验，不能只按一个字机械判断。","source":"A PDF44第3题；B PDF36–37；本页具体例子为自编讲解","lesson":{"type":"词语辨析 · 景色的动势、颜色和范围","recognize":"写同一片景色，可以强调流动、颜色，也可以强调看不到边。","problem":["甲句：“江水向前奔腾，流得又快又远。”乙句：“水面碧绿，铺向远方。”","为什么两句不必填同一个词？"],"steps":[{"title":"甲句强调水怎么流","text":"一泻千里突出流得快、流得远的气势，也可以比喻文章气势顺畅。它不是单纯说地方大。"},{"title":"乙句强调是什么颜色、有多广","text":"一碧万顷突出一片碧绿而广阔；一望无际突出一眼看不到边，本身不要求碧绿色。"},{"title":"把句子里真正强调的细节留下","text":"有奔腾、急流等线索，优先比较动势；有碧绿等线索，比较颜色；只说广阔无边，不要自己补上颜色。"}],"quiz":{"question":"“沙漠一直伸向天边，看不到尽头”，更贴合哪个词？","options":[{"text":"一望无际","correct":true,"feedback":"对。句子突出辽阔、看不到边，没有说碧绿，也没有说水流奔腾。"},{"text":"一碧万顷","correct":false,"feedback":"这个词包含碧绿的颜色信息。题目说沙漠辽阔，没有给出碧绿色。"},{"text":"一泻千里","correct":false,"feedback":"它通常突出水流或表达的奔涌气势，不能仅凭面积大就用在这里。"}]}}},{"id":"k12","topic":"词语","kind":"必记","q":"词语辨析 · 一致、路远与频次：“不约而同”和“千里迢迢”分别在说什么？","a":"不约而同：没商量却一致；千里迢迢：路途很远；隔三差五：时常、间或发生。先分清句子在回答哪种问题。","hook":"一起做、走得远、来得勤，是三种不同信息。","trap":"一句话可以同时涉及三种信息；不能只因前面提过路远，就认定后面再说路远一定错误。","source":"A PDF44第4题；B PDF37；本页具体例子为自编讲解","lesson":{"type":"词语辨析 · 一致、路远与频次","recognize":"这三个词回答的不是同一个问题：行动是否一致、路程多远、多久发生一次。","problem":["几个人没有事先商量，听到消息后都去帮忙。另一个人从很远的家乡赶来。","“不约而同”和“千里迢迢”分别在说什么？"],"steps":[{"title":"不约而同，看有没有约定和一致行动","text":"“约”是事先商量，“同”是行动或想法一致。题目明确说没商量却都去帮忙，就对应这个词。"},{"title":"千里迢迢，看路程是否很远","text":"远道赶来突出路途遥远，不是在说大家有没有商量。两种情况可以同时存在。"},{"title":"隔三差五，看发生得是否时常","text":"“隔三差五来探望”说的是不时来一次，不是精确规定每三天或五天来，也不是说路很远。"}],"quiz":{"question":"“他时常来问候我们，但没有固定日期”更接近哪个词？","options":[{"text":"隔三差五","correct":true,"feedback":"对。它表达时常、间或发生，不要求精确的固定间隔。"},{"text":"千里迢迢","correct":false,"feedback":"句子没有给出遥远路程，只交代来问候的频次。"}]}}},{"id":"k13","topic":"词语","kind":"必记","q":"词语辨析 · 不同不等于各有优点：这两种“不同”有什么区别？","a":"千差万别只说差异大；各有千秋还要有各自的长处；殊途同归是办法不同而结果相同；如出一辙是非常相似。","hook":"“各有千秋”比“不同”多了一层：各有优点。","trap":"不要把所有不同都夸成各有千秋，先检查原文有没有说到长处。","source":"A PDF44–45第5题；B PDF37；本页具体例子为自编讲解","lesson":{"type":"词语辨析 · 不同不等于各有优点","recognize":"有些词只描述差异，有些词还包含对长处或结果的判断。","problem":["方案甲省钱，方案乙省时间；另有几份报告给出的数字相差很大。","这两种“不同”有什么区别？"],"steps":[{"title":"两种方案不只是不同，还各有长处","text":"省钱和省时间都被当作优点，因此可以说各有千秋。这个词含有“各自有可取之处”的评价。"},{"title":"报告差异很大，只能先确认不同","text":"数字相差大，可以说千差万别；没有说每份报告有什么优点，就不能自动说各有千秋。"},{"title":"再分清另外两个常见词","text":"殊途同归：方法或道路不同，最后结果相同。如出一辙：非常相似。一个比较结果，一个比较相似程度。"}],"quiz":{"question":"两个人用不同解法，都算出正确的同一个结果，更贴近哪个词？","options":[{"text":"殊途同归","correct":true,"feedback":"对。解法不同是“殊途”，最后得到相同结果是“同归”。"},{"text":"千差万别","correct":false,"feedback":"它只突出差异很大，不能准确表达这句话特意强调的“结果相同”。"}]}}},{"id":"k14","topic":"词语","kind":"必记","q":"词语辨析 · 真实的报道也可能不全面：它“真实”就一定“全面”吗？","a":"全面看是否遗漏，真实看是否符合事实，客观看是否受个人好恶左右，清晰看是否容易理解。根据上下文指出的具体问题选词。","hook":"没说全，不等于说的全是假。","trap":"这几个评价可以同时成立或同时缺失，填空时要比较哪个最直接回应文段。","source":"A PDF44–45第5题；B PDF37；本页具体例子为自编讲解","lesson":{"type":"词语辨析 · 真实的报道也可能不全面","recognize":"全面、客观、真实、清晰各自检查一件事，不是四个可以随便替换的“好”。","problem":["一篇报道列出的优点都是真的，但完全不提已经存在的缺点。","它“真实”就一定“全面”吗？"],"steps":[{"title":"真实，检查说的事是不是事实","text":"列出的优点确实存在，说明这些陈述可以是真实的，没有把假的事情当真的说。"},{"title":"全面，检查有没有遗漏重要方面","text":"只写优点、不写重要缺点，仍然可能片面。所以真实不自动保证全面。"},{"title":"客观和清晰，还在检查别的事","text":"客观看是否尽量依据事实、避免个人好恶；清晰看是否讲得明白、不含混。一个判断可能同时具有几种问题。"}],"quiz":{"question":"“只谈成果，不谈同样重要的问题”直接暴露的是哪一点？","options":[{"text":"所有信息都是虚假的","correct":false,"feedback":"遗漏问题不能推出成果全是编造的。要区分“没说全”和“说了假话”。"},{"text":"不够全面","correct":true,"feedback":"对。关键是漏掉重要方面。现有成果可能都是真实的，但信息仍然不完整。"}]}}},{"id":"k15","topic":"词语","kind":"必记","q":"词语辨析 · 合力为什么强调一起出力：为什么“形成合力”贴合这个场景？","a":"多方共同出力，直接对应合力；帮助推进偏助力；推动向前偏动力；提供保障偏支撑。要比较原句在强调哪个角度。","hook":"看见“三方、汇聚、共同”，再想是不是在强调一起出力。","trap":"这些词不是绝对互斥的。不要把一个常见搭配当成不用读上下文的固定答案。","source":"A PDF45第6题；B PDF37；本页具体例子为自编讲解","lesson":{"type":"词语辨析 · 合力为什么强调一起出力","recognize":"合力、助力、动力、支撑都和做成事情有关，但强调的角色不同。","problem":["居民出人手，企业提供材料，社区负责组织，几方一起修好公共花园。","为什么“形成合力”贴合这个场景？"],"steps":[{"title":"几方力量汇在一起","text":"句子专门列出不同主体，说明大家共同出力。合力正好突出这些力量汇合起来。"},{"title":"帮助别人，常说助力","text":"如果重点是“企业提供材料，帮助社区推进修缮”，可以从帮助的角度说助力。但原句更强调多方共同参与。"},{"title":"动力和支撑又是另外两个角度","text":"动力侧重推动事情向前的力量；支撑侧重提供支持和保障。词义会重叠，具体填空比较谁最贴合当前强调的内容。"}],"quiz":{"question":"“整合学校、家庭、社会三方力量，共同育人”，哪种说法最直接？","options":[{"text":"只因有“力量”二字，就只能用动力","correct":false,"feedback":"不能看见某个字就锁定词。这里最具体的线索是多方整合和共同参与。"},{"text":"形成育人合力","correct":true,"feedback":"对。三方力量整合、共同参与，恰好强调合力的共同出力。"}]}}},{"id":"k16","topic":"词语","kind":"必记","q":"词语辨析 · 擘画和勾画差在哪里：哪件事更接近“擘画”？","a":"擘画（bò huà）偏筹划、布置；勾画偏勾勒描绘。先看是在安排怎么做，还是在描出什么样，再结合上下文比较。","hook":"字里有“画”，不代表都在用笔画图。","trap":"规划、谋划、擘画常有意义重叠，要靠语境择优，不能制造唯一固定搭配。","source":"A PDF45第6题；B PDF37；本页具体例子为自编讲解","lesson":{"type":"词语辨析 · 擘画和勾画差在哪里","recognize":"“擘画”读 bò huà，重点是筹划安排；“勾画”重点是勾勒描绘。","problem":["甲在纸上画出建筑的大致轮廓；乙在安排未来几年的发展方向和措施。","哪件事更接近“擘画”？"],"steps":[{"title":"先看字面动作是在画，还是在谋划","text":"甲在描出轮廓，适合用勾画。乙在筹划方向、步骤和措施，更接近擘画。"},{"title":"勾画也能用于抽象描述","text":"“勾画发展蓝图”有描绘未来图景的意味；“擘画发展蓝图”更强调筹划安排。同样可以接“蓝图”，侧重点仍要看语境。"},{"title":"别把能搭配误当成唯一能搭配","text":"规划偏整体和长远安排，谋划偏筹划想办法，它们也可能和战略搭配。因此，不能只背“战略只能配擘画”。"}],"quiz":{"question":"“用几笔画出山峰的大致轮廓”，哪个词更直接？","options":[{"text":"勾画","correct":true,"feedback":"对。这里是实际勾勒轮廓，并没有在筹划行动或安排发展。"},{"text":"擘画","correct":false,"feedback":"擘画强调筹划、布置，不是“用笔画几笔”这个动作。"}]}}},{"id":"k17","topic":"词语","kind":"必记","q":"名言理解 · 四句话各劝你做什么：它们提醒的重点完全一样吗？","a":"学而不思：学思结合。终日而思不如须臾之学：切实学习胜空想。业精于勤、行成于思：勤学修身。知、好、乐：态度与兴趣层次。","hook":"先说它在解决什么问题，再记原句。","trap":"“行成于思”不泛指事情成功；“乐学”也不能直接推出学习速度一定更快。","source":"A PDF39；B PDF33；本页具体例子为自编讲解","lesson":{"type":"名言理解 · 四句话各劝你做什么","recognize":"先把名言翻成白话，辨别它针对的学习问题，而不是只看到“学”字就配上。","problem":["“学而不思则罔，思而不学则殆”和“吾尝终日而思矣，不如须臾之所学也”都提到学与思。","它们提醒的重点完全一样吗？"],"steps":[{"title":"第一句提醒：学和思不能偏废","text":"“学而不思则罔，思而不学则殆”是说只学不思容易迷惑，只想却不学习求证也会陷入疑惑。重点是两者结合。"},{"title":"第二句提醒：不要整天空想","text":"“吾尝终日而思矣，不如须臾之所学也”用整天空想与片刻学习作比较，强调切实学习胜过一味空想，不是在否定思考。"},{"title":"第三句同时讲学业和修身","text":"“业精于勤，荒于嬉；行成于思，毁于随”：学业靠勤奋精进，德行、行为修养靠思考形成。不能把“行成于思”泛化成凡事想一想就成功。"},{"title":"第四句强调喜欢和乐于学习","text":"“知之者不如好之者，好之者不如乐之者”比较了解、喜爱、乐在其中的态度层次，没有直接说谁学习速度更快。"}],"quiz":{"question":"一段话批评“只会死记、不肯动脑”，又批评“空想却不读书求证”，哪句名言最贴合？","options":[{"text":"学而不思则罔，思而不学则殆","correct":true,"feedback":"对。两种偏差都出现，文段希望学习与思考结合，正好对应这句话。"},{"text":"知之者不如好之者，好之者不如乐之者","correct":false,"feedback":"这句主要说态度和兴趣层次；题目当前强调学与思如何配合，并没有比较喜爱程度。"}]}}},{"id":"k18","topic":"词语","kind":"必记","q":"词义理解 · 玉照不是一种颜色的照片：黑白照片也能叫玉照吗？","a":"玉照是敬称，不按颜色分类；宿疾是久病或旧疾；经年、积岁都与时间经过有关，经年不必机械限定为很多年。","hook":"先问词在说哪一件事，别从一个字随便猜。","trap":"词语在具体语句里还要结合上下文理解。“经年”不能一律翻成精确的多年数。","source":"A PDF22–23；B PDF18–19；本页具体例子为自编讲解","lesson":{"type":"词义理解 · 玉照不是一种颜色的照片","recognize":"先弄清词是按时间、照片颜色、称呼礼貌，还是疾病的新旧来分类。","problem":["一张黑白人像照片，有人礼貌地称它为对方的“玉照”。","黑白照片也能叫玉照吗？"],"steps":[{"title":"玉照说的是称呼方式","text":"玉照是对他人照片的敬称，常用于人像照片。这里的“玉”不是说照片是玉色，也不是说一定是彩色。"},{"title":"所以颜色和称呼可以同时描述","text":"黑白、彩色是照片的颜色分类；玉照是礼貌称呼。一张彩色人像可以是玉照，黑白人像也可以。"},{"title":"再认识三个容易望文生义的词","text":"经年可指经过一年或若干年；积岁指累积的岁月、长久时间；宿疾是久病、旧疾。“宿”在这里不是住处。"}],"quiz":{"question":"“多年未见，旧病又发作了”中的“旧病”可用哪个词？","options":[{"text":"宿疾","correct":true,"feedback":"对。宿疾就是久病、旧疾，重点是疾病由来已久或过去就有。"},{"text":"玉照","correct":false,"feedback":"玉照是对他人照片的敬称，和疾病没有关系。"}]}}},{"id":"k19","topic":"词语","kind":"必记","q":"成语辨析 · 真诚、欺骗和随声附和：为什么“推心置腹”和“尔虞我诈”意思相反？","a":"推心置腹是真诚相待，尔虞我诈是互相欺骗；亦步亦趋常侧重跟随模仿，人云亦云更侧重意见附和。","hook":"先把行为说清楚，再记近义或反义关系。","trap":"亦步亦趋还有具体语境下的其他用法，不能把常见贬义解释机械套在每一句中。","source":"A PDF23；B PDF19；本页具体例子为自编讲解","lesson":{"type":"成语辨析 · 真诚、欺骗和随声附和","recognize":"先用具体行为说明成语，再判断它们意思相反还是相近。","problem":["甲真诚地把心里话告诉朋友；乙和丙却互相算计、互相欺骗。","为什么“推心置腹”和“尔虞我诈”意思相反？"],"steps":[{"title":"推心置腹，重点是真诚相待","text":"“把心交给对方”是形象说法，表达诚恳、信任，不是字面上的身体动作。"},{"title":"尔虞我诈，重点是互相欺骗","text":"“虞、诈”在这里都与欺骗有关。一边真诚，一边互相欺骗，所以这两个词在这一方面意思相反。"},{"title":"亦步亦趋与人云亦云，则有相近处","text":"亦步亦趋常说跟着别人模仿、缺乏主见；人云亦云更直接说别人怎么说，自己就怎么附和。相近不代表任何场合都可互换。"}],"quiz":{"question":"只想强调“别人说什么，他就跟着说什么，没有自己的判断”，哪个词最直接？","options":[{"text":"人云亦云","correct":true,"feedback":"对。“云”在这里是说，突出跟着他人的意见附和，正好对应题目限定的意思。"},{"text":"推心置腹","correct":false,"feedback":"真诚说心里话不等于跟着别人附和，两个行为的重点不同。"}]}}},{"id":"k20","topic":"推理","kind":"必记","q":"公文常识 · 公告与通告看内容用途：为什么不能只用“全国／地方”区分？","a":"公告偏宣布重要或法定事项；通告偏一定范围内需要遵守或周知的事项。先看内容用途，不按全国、地方机械划分。","hook":"向有关人员说明需要遵守的具体事项，是通告的典型用途。","trap":"这里只用于公文文种辨析，具体公文仍应依照法定职权、行文规则和内容确定。","source":"A PDF23；B PDF20；本页具体例子为自编讲解","lesson":{"type":"公文常识 · 公告与通告看内容用途","recognize":"两个都是公文文种，要看宣布什么内容、希望哪些人知道或遵守。","problem":["甲文依法宣布一项重要法定事项；乙文告知某区域临时交通管制及通行要求。","为什么不能只用“全国／地方”区分？"],"steps":[{"title":"公告，侧重宣布重要或法定事项","text":"公告用于向国内外宣布重要事项或法定事项。关键是内容的重要性或法定性质，不是看到某一级机关就自动判断。"},{"title":"通告，侧重一定范围内周知或遵守","text":"临时管制文希望相关区域的人了解并遵守通行要求，很符合通告的用途：在一定范围内公布应当遵守或周知的事项。"},{"title":"不要把常见范围变成硬规定","text":"地方机关也可能依法发布公告，不能见“地方”就排除公告。做题先对照文种的用途，再看具体情境。"}],"quiz":{"question":"某区域临时交通管制，要让相关人员知晓并遵守通行规定，更贴合哪种用途？","options":[{"text":"通告","correct":true,"feedback":"对。题目明确强调一定范围内需要知晓、遵守的事项，与通告用途相符。"},{"text":"只要涉及政府就一定是公告","correct":false,"feedback":"公告和通告都可由相关机关使用，不能仅凭“政府”二字区分，仍要看具体内容用途。"}]}}},{"id":"t01","topic":"推理","kind":"迁移","q":"迁移练习 · 成绩好可能原本就有原因：若这些人在买书前就更勤奋、复习时间更长，原解释还那么可靠吗？","a":"“这群人做了某事，也表现更好”不足以说明那件事造成了更好。先检查他们在此前是否就有学习时间、水平等差别。","hook":"先有的差距，不能直接记成后来某种做法的功劳。","trap":"提出其他原因不等于证明原来的因素完全没有作用。","source":"自编迁移；对应A PDF9–11因果论证；本页具体例子为自编讲解","lesson":{"type":"迁移练习 · 成绩好可能原本就有原因","recognize":"用另一条能影响成绩的信息，检查原先的解释是不是跳得太快。","problem":["买某套辅导书的人分数较高，有人便说“买这套书让人成绩变好”。","若这些人在买书前就更勤奋、复习时间更长，原解释还那么可靠吗？"],"steps":[{"title":"先找他把什么当成原因","text":"他观察的是买书的人分高，却把分高解释为买书的效果。题干还没有证明原来水平相同。"},{"title":"把复习时间这条信息加进去","text":"如果这群人本来更勤奋、复习更久，那么较高成绩也可能来自这些原有差别。现在不能把功劳全算给书。"},{"title":"把结论说到证据允许的程度","text":"这叫削弱“买书导致高分”的解释。它没有证明书一定无效，只是说明当前比较还不够可靠。"}],"quiz":{"question":"参加某自愿兴趣班的学生成绩更高。哪条信息最直接提醒我们不能全归功于兴趣班？","options":[{"text":"兴趣班的教室门是白色","correct":false,"feedback":"题目没有说明门的颜色怎样影响成绩，这条信息不能直接帮助判断成绩差异的原因。"},{"text":"报名前，这组学生的成绩就更高","correct":true,"feedback":"对。结果的差别在参加之前已经存在，因此仅比较参加后的分数，不足以认定是兴趣班造成。"}]}}},{"id":"t02","topic":"推理","kind":"迁移","q":"迁移练习 · 大家统一缩小，大小关系会变吗：它会把两根读成一样长吗？","a":"100 和 80 统一乘 0.85 后是 85 和 68，仍有大小差异且比例不变；绝对差会改变。平均偏小，不等于每次都统一缩小。","hook":"先算一组数字，具体看误差改变了什么。","trap":"若误差因组别或个体而异，结论可能不同；不能扩展成“所有测量误差都不影响研究”。","source":"自编反例；核查A PDF7 G／B PDF7；本页具体例子为自编讲解","lesson":{"type":"迁移练习 · 大家统一缩小，大小关系会变吗","recognize":"先代入具体数字，再判断仪器误差到底改变了什么，别只看到“误差”就下结论。","problem":["两根木棍实际长 100 厘米和 80 厘米。仪器每次都只报真实长度的 85%。","它会把两根读成一样长吗？"],"steps":[{"title":"先分别算出读数","text":"100×0.85＝85，80×0.85＝68。读数都小了，但 85 仍然大于 68，原来的大小顺序没有反过来。","visual":"scale-numbers"},{"title":"再分清绝对差和相对关系","text":"原来差 20，现在差 17，所以不能说所有数字都不变。但两者的比值仍是 1.25，大的是小的 1.25 倍。"},{"title":"最后检查“统一”是否真的给了","text":"这个结论依赖每次都乘同一个正数。如果题目只说平均偏小 15%，有的偏多、有的偏少，就不能直接当成统一乘 0.85。"}],"quiz":{"question":"20 和 10 都乘 0.5 后，下面哪句正确？","options":[{"text":"变成 10 和 5，前者仍是后者的两倍","correct":true,"feedback":"对。两个数统一乘同一个正数，比例保持；差值从 10 变成了 5，并非所有数值都不变。"},{"text":"变成一样大，原来的差异消失","correct":false,"feedback":"直接算就能看到 10 和 5 不一样。统一缩小不会自动抹掉原来的大小关系。"}]}}},{"id":"t03","topic":"推理","kind":"迁移","q":"迁移练习 · 名字智能，不等于条件已经满足：这段描述足以说明它满足要求吗？","a":"按时上传说明它会执行程序，没有直接说明会根据环境反馈改变行为。定义里要什么动作，就在描述里找相应证据。","hook":"看它具体做了什么，不看产品叫得多智能。","trap":"没写出某项功能，只能说题面不足以认定，不能据此断言现实中的设备绝对没有该功能。","source":"自编迁移；对应A PDF26／B PDF23；本页具体例子为自编讲解","lesson":{"type":"迁移练习 · 名字智能，不等于条件已经满足","recognize":"判断定义时，只检查选项写出的行为，不替它脑补功能。","problem":["本题要求：系统能与环境实时交互，并根据反馈调整自己的行动。某设备只被描述为“每小时自动上传一次温度”。","这段描述足以说明它满足要求吗？"],"steps":[{"title":"把“自动”与“会调整”分开","text":"按时上传可以由固定程序完成；即使温度突然变化，它仍可能只按原定时刻发送数据。自动执行不等于根据环境改变行为。"},{"title":"检查题目要求的关键动作","text":"题目还要求根据环境反馈调整行动。描述里没交代这个动作，所以现有文字不足以认定条件已经满足。"},{"title":"看什么样的补充才有关","text":"如果补充它检测到异常温度后，会立即调整巡检路线或控制动作，就提供了与反馈调整有关的信息。仍需检查定义的其他条件。"}],"quiz":{"question":"哪一句补充最直接体现“根据环境反馈调整行动”？","options":[{"text":"设备包装上印着智能二字","correct":false,"feedback":"包装名称不是行为证据，不能代替题目所要求的实时反馈和行动调整。"},{"text":"发现前方障碍后，机器人实时改变路线绕开","correct":true,"feedback":"对。先感知到障碍，再改变路线，两个动作之间的联系写得清楚。"}]}}},{"id":"t04","topic":"图形","kind":"迁移","q":"迁移练习 · 两个分开的图为什么不能一笔画：为什么仍然至少要两笔？","a":"两个分开的三角形各自可一笔，但彼此走不到，因此总共至少两笔。先确认线条连通，才能用 0 或 2 个奇点判断整图。","hook":"笔必须沿已有线条走，不能凭空跳到另一块。","trap":"接触点和交叉点是否真正连通，要以题目给的画法为准，不能自行增加连接线。","source":"自编迁移；对应A PDF20／B PDF17；本页具体例子为自编讲解","lesson":{"type":"迁移练习 · 两个分开的图为什么不能一笔画","recognize":"一笔画既要看每个点连接几条线，也要看笔能否沿已有线条走到所有地方。","problem":["纸上有两个互不接触的三角形。每个顶点都接两条线，没有奇点。","为什么仍然至少要两笔？"],"steps":[{"title":"先沿第一个三角形走一圈","text":"三个顶点都能一进一出，画完这一圈能回到起点，第一个三角形本身可以一笔完成。","visual":"two-triangles"},{"title":"问题出在到不了第二个三角形","text":"两个图之间没有线连接。想去画第二个，只能抬笔，或自己加一条题目没有的线；后者已经改变了原图。"},{"title":"先检查连通，再用奇点规则","text":"奇点为 0 或 2 的一笔画规则，适用于连成一块的图。现在有两块，每块至少一笔，合计两笔。"}],"quiz":{"question":"两个圆恰好在一个点接触，沿线可以从一个圆走到另一个圆。能一笔画完且不重复线吗？","options":[{"text":"能，先绕一圆，再在接点转入另一圆","correct":true,"feedback":"对。接触后整图连通，接点接出四段线，是偶点，其余点也为偶点。可以从接点出发绕完两圈再回到接点。"},{"text":"不能，只要看起来是两个圆就一定两笔","correct":false,"feedback":"关键是它们是否连通，不是名字叫几个圆。这里有共同接点，笔可以沿已有线条继续走。"}]}}},{"id":"t05","topic":"推理","kind":"迁移","q":"迁移练习 · 钢琴和琴键各自是什么：它们能因此被看成同一种关系吗？","a":"钢琴本身是乐器的一种；琴键只是钢琴的一部分。话题相同不代表关系相同，要把关系完整说出来。","hook":"把“一种”放进去试读，往往就能看到差别。","trap":"关系对了还要核对词序，不能把“大类∶小类”当成“小类∶大类”。","source":"自编迁移；对应A PDF22–23；本页具体例子为自编讲解","lesson":{"type":"迁移练习 · 钢琴和琴键各自是什么","recognize":"把含糊的“属于”换成完整句子，检验关系是否真的相同。","problem":["“钢琴∶乐器”和“琴键∶钢琴”都涉及钢琴。","它们能因此被看成同一种关系吗？"],"steps":[{"title":"钢琴本身就是一种乐器","text":"一架钢琴可以归到乐器这个大类里。这里是小类与大类。"},{"title":"一枚琴键却不是一种钢琴","text":"琴键是钢琴的零部件。不能把一枚琴键直接当成一架钢琴，所以它是部分与整体。"},{"title":"相同话题，不等于相同关系","text":"两组都谈钢琴，只是词语话题相同；类比题要比较的是两个词之间的具体关系。"}],"quiz":{"question":"哪一组与“钢琴∶乐器”更一致？","options":[{"text":"小提琴∶乐器","correct":true,"feedback":"对。小提琴本身也是一种乐器，同样是小类在前、大类在后。"},{"text":"琴弦∶钢琴","correct":false,"feedback":"琴弦只是钢琴的一部分，不能说琴弦本身是一种钢琴。"}]}}},{"id":"t06","topic":"言语","kind":"迁移","q":"迁移练习 · 两种相反例子在说明同一件事：为什么不能概括成“旧产业城市应该转型”？","a":"把兴起和衰落两个例子一起看，找它们共同说明的观点。不要只概括一个例子，更不要自行加上文段没提出的对策。","hook":"中心句要装得下两个例子。","trap":"这段用于练习主旨概括，不是在独立证明所有城市发展的现实规律。","source":"同一考点自编练习；A PDF31第4题／B PDF27；本页具体例子为自编讲解","lesson":{"type":"迁移练习 · 两种相反例子在说明同一件事","recognize":"一段话可以用兴起和衰落两类例子，共同说明一个更大的观点。","problem":["文段说：“城市会随产业变化发生起落。有的因旧产业萎缩而衰退，有的借新产业成长而兴盛。城市兴衰并不是反常现象。”","为什么不能概括成“旧产业城市应该转型”？"],"steps":[{"title":"先分别看两个例子","text":"前一个说衰退，后一个说兴盛，两个都在演示城市会随条件改变而起落。"},{"title":"把共同支持的那句话找出来","text":"共同意思是城市兴衰有其原因，并非反常；不能只抓住衰退的城市，把兴盛的例子丢掉。"},{"title":"再检查答案有没有擅自加主张","text":"“应该转型”是一个对策，而这段自编文段没有提出它。即使对策现实中可能有价值，也不能冒充这段话的中心。"}],"quiz":{"question":"另一段同时举新职业出现、旧职业减少，强调“职业结构随技术变化”。哪项概括更合适？","options":[{"text":"技术变化会带来职业结构调整","correct":true,"feedback":"对。它能涵盖新职业出现和旧职业减少两方面，贴合共同观点。"},{"text":"所有人都应立即更换职业","correct":false,"feedback":"这是额外提出的行动要求，文段并没有说所有人都必须换职业。"}]}}},{"id":"t07","topic":"言语","kind":"迁移","q":"迁移练习 · 明确给了顺序，就照进度接下去：下一段最自然地从哪方面开始？","a":"先画出文章列出的顺序，再划掉已经讲过的。尚未展开的下一项，比自己想象的“重要主题”更有依据。","hook":"按文章已经承诺的顺序接，不替作者另排一套。","trap":"如果文段没有明确顺序，就不能仅凭列举先后机械认定唯一答案。","source":"同一考点自编练习；A PDF38第2题／B PDF32；本页具体例子为自编讲解","lesson":{"type":"迁移练习 · 明确给了顺序，就照进度接下去","recognize":"有明确的展开顺序时，先检查其中哪一项还没讲。","problem":["文章说“下面将依次从地理环境、人口往来、街区发展、文化传统四方面介绍这座城”，随后尚未展开任何一方面。","下一段最自然地从哪方面开始？"],"steps":[{"title":"把“依次”这个限定保留下来","text":"依次表示按列出的顺序介绍，不是把四个词随便摆在一起。第一项是地理环境。"},{"title":"确认前文有没有已经讲过第一项","text":"题目明确说四方面都还没有展开，所以第一项没有被完成，不能直接跳到后面。"},{"title":"不要按哪个主题更重要来选","text":"文化传统也可能重要，但重要不等于应该先讲。这里应按文章自己给的顺序接续。"}],"quiz":{"question":"如果地理环境和人口往来已经依次讲完，下一项更自然是什么？","options":[{"text":"文化传统，因为听起来更有深度","correct":false,"feedback":"深度或重要性不能替代文段明确给出的次序。第三项街区发展还没展开。"},{"text":"街区发展","correct":true,"feedback":"对。按照给出的顺序，前两项已经完成，第三项是街区发展。"}]}}},{"id":"t08","topic":"言语","kind":"迁移","q":"迁移练习 · “由此可见”前面需要什么：为什么更自然地先放①，再放②？","a":"先给数据，再给依据数据得出的判断；同时检查数值真的支持判断、结论范围没有被扩大。","hook":"“由此可见”是一份需要兑现的承诺：前文要给得出这个结论。","trap":"同词重复只是线索，不能代替对指代和论据是否成立的检查。","source":"同一考点自编练习；A PDF42第2题／B PDF35；本页具体例子为自编讲解","lesson":{"type":"迁移练习 · “由此可见”前面需要什么","recognize":"“此”必须能指回某些信息，“可见”的判断还应当得到那些信息支持。","problem":["① 四个产业的就业人数分别是：甲 10 万、乙 15 万、文化创意 30 万、丁 20 万。② 由此可见，这四个产业中文化创意产业就业人数最多。","为什么更自然地先放①，再放②？"],"steps":[{"title":"先看②是依据什么判断","text":"②说“由此可见”，是在根据前面信息得出结论。①的四个数字恰好可以成为它的依据。"},{"title":"不能只认“由此”，还要算一眼","text":"10、15、30、20 中确实是 30 最大，所以这些数据支持②。若数字不是这样，光有连接词也接不成立。"},{"title":"保留判断的范围","text":"数据只比较这四个产业，因此②也只说这四者中最多，不能扩大成全国所有产业中最多。"}],"quiz":{"question":"数据改为甲 40 万、乙 15 万、文化创意 30 万、丁 20 万，还能推出文化创意最多吗？","options":[{"text":"能，只要前面写着“由此可见”","correct":false,"feedback":"连接词不能把错误判断变正确。必须检查数据确实支持哪个结论。"},{"text":"不能，甲的 40 万比 30 万更多","correct":true,"feedback":"对。句子顺序可能看起来连贯，但结论已经不受数据支持，不能只看连接词。"}]}}},{"id":"t09","topic":"词语","kind":"迁移","q":"迁移练习 · 并列否定不等于两个词反义：抽烟与喝酒是反义词吗？","a":"这个句式只是分别否定两件事，不规定两项必须反义。抽烟和喝酒就是一个能直接说明问题的反例。","hook":"句式说到哪里，就推到哪里。","trap":"不能由此反过来说两项绝对不能反义；是否反义要看具体词义和语境。","source":"自编反例；对应A PDF44第2题／B PDF36；本页具体例子为自编讲解","lesson":{"type":"迁移练习 · 并列否定不等于两个词反义","recognize":"“既不……也不……”只是把两个否定放在一起，没有规定两项意思必须相反。","problem":["“他既不抽烟，也不喝酒。”这句话语意完整。","抽烟与喝酒是反义词吗？"],"steps":[{"title":"分别读两个否定就明白","text":"既不抽烟，说明第一种行为不做；也不喝酒，说明第二种行为也不做。两项共同被否定。"},{"title":"抽烟和喝酒不是相反意思","text":"它们是两种不同的行为，不是像高与低那样相反。句子仍然成立，足以说明这个句式不强制反义。"},{"title":"因此填空还得看具体语境","text":"若某道题恰好要填一对反义词，必须在前后意思里找到理由，不能仅靠“既不、也不”四个字。"}],"quiz":{"question":"“她既不骑车，也不坐公交”能直接推出哪件事？","options":[{"text":"这两种出行方式她都不采用","correct":true,"feedback":"对。这正是两个否定表达的内容。她仍可能步行，题目没有排除其他方式。"},{"text":"她完全不出门","correct":false,"feedback":"还有步行、乘地铁等可能。只否定两种方式，不能扩大成否定所有出行方式。"}]}}},{"id":"t10","topic":"词语","kind":"迁移","q":"迁移练习 · 把词义放回两种具体场景：为什么第一组可说“各有千秋”，第二组更适合“千差万别”？","a":"省钱和省时各是优点，可以说各有千秋；报告仅有巨大差异、未说明优点，就不能自行加上“各有长处”的评价。","hook":"选词时连同它带的评价一起检查。","trap":"不是只看哪个词听起来好听，而是看它额外表达的信息有没有依据。","source":"自编迁移；对应A PDF45第5题／B PDF37；本页具体例子为自编讲解","lesson":{"type":"迁移练习 · 把词义放回两种具体场景","recognize":"先说清楚不同在哪里，有没有各自的优点，避免把不同一律写成各有千秋。","problem":["方案甲能节省费用，方案乙能节省时间。另一组材料里，几份报告的数字差异很大，却没评价谁更好。","为什么第一组可说“各有千秋”，第二组更适合“千差万别”？"],"steps":[{"title":"第一组确实各有一项长处","text":"节省费用、节省时间都是被明确提出的优点，因此“各有千秋”不是凭空夸赞，而是有信息依据。"},{"title":"第二组只交代差别，没有交代优点","text":"差异很大，可以用千差万别；不能仅因每份不一样，就断言每份都有可取之处。"},{"title":"检查自己有没有加上原文没说的评价","text":"词语自带的“各有优点”，也是一层信息。选择这个词，就必须让语境支撑这层信息。"}],"quiz":{"question":"“几份建议各自在成本、速度或安全性上有长处”，哪一个更贴切？","options":[{"text":"只因有差别，所以两个词永远随便换","correct":false,"feedback":"两个词带的信息不同。“各有千秋”包含肯定长处，“千差万别”只是突出差别大。"},{"text":"各有千秋","correct":true,"feedback":"对。句子明确给了各自的长处，不只是说它们内容不同。"}]}}}],"sourceFilesAvailable":false}</script>
+  <script>(function (root) {
+  'use strict';
+  const APP = 'wuzhang-jiuting';
+  const TOPICS = ['全部', '推理', '图形', '言语', '词语'];
+  const KINDS = ['全部', '方法', '必记', '迁移'];
+  const RATINGS = ['again', 'hard', 'good'];
+  const own = (o, k) => Object.prototype.hasOwnProperty.call(o, k);
+  const object = value => value !== null && typeof value === 'object' && !Array.isArray(value);
+  const integer = (v, min, max) => Number.isSafeInteger(v) && v >= min && v <= max;
+  const timestamp = v => Number.isFinite(v) && v >= 0 && v <= 8640000000000000;
+  function fresh() {
+    return {app: APP, version: 1, progress: {}, filters: {topic: '全部', kind: '全部'}, session: null};
+  }
+  function matches(card, filters) {
+    return (filters.topic === '全部' || card.topic === filters.topic) && (filters.kind === '全部' || card.kind === filters.kind);
+  }
+  function eligible(cards, state, now) {
+    const pool = cards.filter(card => matches(card, state.filters));
+    const due = pool.filter(card => own(state.progress, card.id) && state.progress[card.id].due <= now)
+      .sort((a, b) => state.progress[a.id].due - state.progress[b.id].due);
+    const unseen = pool.filter(card => !own(state.progress, card.id))
+      .sort((a, b) => KINDS.indexOf(a.kind) - KINDS.indexOf(b.kind));
+    return {pool, due, unseen, queue: [...due, ...unseen].slice(0, 5).map(card => card.id)};
+  }
+  function review(previous, rating, now) {
+    if (!RATINGS.includes(rating) || !timestamp(now)) throw new Error('无效的评分或时间。');
+    const streak = rating === 'good' ? (previous?.streak || 0) + 1 : 0;
+    const days = rating === 'hard' ? 1 : [1, 3, 7, 14][Math.min(streak - 1, 3)];
+    let due;
+    if (rating === 'again') due = now + 10 * 60 * 1000;
+    else {
+      const date = new Date(now);
+      date.setDate(date.getDate() + days);
+      due = date.getTime();
+    }
+    return {seen: (previous?.seen || 0) + 1, streak, lastRating: rating, lastReviewed: now, due};
+  }
+  function validate(value, cards) {
+    const fail = message => { throw new Error(message); };
+    if (!object(value) || value.app !== APP || value.version !== 1 || !object(value.progress)) fail('这不是“五张就停”支持的进度文件。');
+    const ids = new Set(cards.map(card => card.id));
+    const clean = fresh();
+    const keys = Object.keys(value.progress);
+    if (keys.length > cards.length) fail('进度条目超出卡片数量。');
+    for (const id of keys) {
+      if (!ids.has(id)) fail('文件含有未知卡片，未导入。');
+      const row = value.progress[id];
+      if (!object(row) || !integer(row.seen, 1, 1000000) || !integer(row.streak, 0, row.seen) || !RATINGS.includes(row.lastRating) || !timestamp(row.lastReviewed) || !timestamp(row.due) || row.due < row.lastReviewed || (row.lastRating !== 'good' && row.streak !== 0) || (row.lastRating === 'good' && row.streak === 0)) fail('某张卡片的评分或复习日期无效。');
+      clean.progress[id] = {seen: row.seen, streak: row.streak, lastRating: row.lastRating, lastReviewed: row.lastReviewed, due: row.due};
+    }
+    if (!object(value.filters) || !TOPICS.includes(value.filters.topic) || !KINDS.includes(value.filters.kind)) fail('练习范围无效。');
+    clean.filters = {topic: value.filters.topic, kind: value.filters.kind};
+    if (value.session !== null) {
+      const s = value.session;
+      if (!object(s) || !Array.isArray(s.queue) || s.queue.length < 1 || s.queue.length > 5 || new Set(s.queue).size !== s.queue.length || !s.queue.every(id => ids.has(id)) || !integer(s.index, 0, s.queue.length) || typeof s.revealed !== 'boolean' || !Array.isArray(s.ratings) || s.ratings.length !== s.index || !s.ratings.every(r => RATINGS.includes(r))) fail('本轮练习记录无效。');
+      if (s.queue.slice(0, s.index).some((id, i) => !own(clean.progress, id) || clean.progress[id].lastRating !== s.ratings[i])) fail('本轮评分与卡片进度不一致。');
+      if (s.queue.some(id => !matches(cards.find(card => card.id === id), clean.filters))) fail('本轮卡片与练习范围不一致。');
+      if (s.index === s.queue.length && s.revealed) fail('已完成的轮次不能处于翻卡状态。');
+      clean.session = {queue: [...s.queue], index: s.index, revealed: s.revealed, ratings: [...s.ratings]};
+      if (s.lesson != null) {
+        const l = s.lesson;
+        const material = cards.find(card => card.id === s.queue[s.index])?.lesson;
+        if (!s.revealed || !material || !object(l) || !['walk', 'quiz'].includes(l.mode) || !integer(l.step, 0, material.steps.length - 1) || !(l.choice === null || integer(l.choice, 0, material.quiz.options.length - 1)) || (l.mode === 'walk' && l.choice !== null)) fail('例题讲解的位置无效。');
+        clean.session.lesson = {mode: l.mode, step: l.step, choice: l.choice};
+      }
+    }
+    return clean;
+  }
+  const api = {APP, TOPICS, KINDS, RATINGS, fresh, matches, eligible, review, validate};
+  if (typeof module !== 'undefined' && module.exports) module.exports = api;
+  else root.StudyCore = api;
+})(typeof globalThis === 'undefined' ? this : globalThis);
+</script>
+  <script>(function(root) {
+  'use strict';
+  const wrap = (body, caption='') => '<figure class="lesson-figure">' + body + (caption ? '<figcaption>' + caption + '</figcaption>' : '') + '</figure>';
+  const table = (heads, rows) => '<table class="demo-table"><thead><tr>' + heads.map(x=>'<th scope="col">'+x+'</th>').join('')+'</tr></thead><tbody>'+rows.map(r=>'<tr>'+r.map((x,i)=>i===0?'<th scope="row">'+x+'</th>':'<td>'+x+'</td>').join('')+'</tr>').join('')+'</tbody></table>';
+  function people(step) {
+    const rows = [ ['甲','排除','排除','确定'], ['乙','排除','确定','已占'], ['丙','确定','已占','已占'] ];
+    return wrap(table(['人物','红','蓝','黄'],rows.slice(0,step)),'每推出一个人的结果，就把它记在表里；每种颜色只用一次。');
+  }
+  function movement(answer) {
+    const rows = [0,1,2,answer?3:null];
+    return wrap('<div class="dot-steps">'+rows.map((n,i)=>'<div class="dot-row"><span>第 '+(i+1)+' 幅</span><div class="four-cells" role="img" aria-label="'+(n===null?'等待推断黑点位置':'黑点在第 '+(n+1)+' 格')+'">'+[0,1,2,3].map(j=>'<span>'+(n===j?'<i></i>':n===null&&j===1?'?':'')+'</span>').join('')+'</div></div>').join('')+'</div>',answer?'每次向右走一格，下一幅在第 4 格。':'黑点个数始终是 1，位置却在变。');
+  }
+  function commonLines() {
+    return wrap('<svg viewBox="0 0 360 150" role="img" aria-label="第一图为正方框加竖线，第二图为正方框加横线；共同部分只有正方框"><g fill="none" stroke="#2455a6" stroke-width="3"><rect x="12" y="20" width="80" height="80"/><path d="M52 20v80"/><rect x="140" y="20" width="80" height="80"/><path d="M140 60h80"/><rect x="268" y="20" width="80" height="80"/></g><g font-size="19" fill="#172b4d" text-anchor="middle"><text x="52" y="133">第一图</text><text x="180" y="133">第二图</text><text x="308" y="133">共同部分</text></g></svg>','本小题已指定“求同”；真实题目不能默认一定用这个规则。');
+  }
+  function edges() {
+    return wrap('<svg viewBox="0 0 360 152" role="img" aria-label="三角形3条边、四边形4条边、五边形5条边"><g fill="#eaf0fa" stroke="#2455a6" stroke-width="3" stroke-linejoin="round"><path d="m20 96 40-70 40 70Z"/><rect x="144" y="25" width="72" height="72"/><path d="m300 18 44 32-17 51h-54l-17-51Z"/></g><g font-size="21" fill="#172b4d" text-anchor="middle"><text x="60" y="138">3 条边</text><text x="180" y="138">4 条边</text><text x="300" y="138">5 条边</text></g></svg>','这里只展示一种可尝试的观察：形状不同，边数可以比较。');
+  }
+  function arrows() {
+    const shape='<path d="M-9 25V-4h-13L0-28 22-4H9v29Z" fill="#2455a6"/>';
+    return wrap('<svg viewBox="0 0 360 94" role="img" aria-label="同一箭头依次朝上、朝右、朝下，第四个方向待推断"><g transform="translate(42 38)">'+shape+'</g><g transform="translate(130 38) rotate(90)">'+shape+'</g><g transform="translate(218 38) rotate(180)">'+shape+'</g><text x="310" y="52" text-anchor="middle" font-size="36" fill="#172b4d">?</text><g fill="#52647e" font-size="18" text-anchor="middle"><text x="42" y="88">朝上</text><text x="130" y="88">朝右</text><text x="218" y="88">朝下</text></g></svg>');
+  }
+  function strokeGraph(shape, paths=false) {
+    const v = shape === 'v';
+    const line = v ? '<path d="M55 50 180 168 305 50"/>' : '<path d="M55 75H305M180 75V178"/>';
+    const marks = v ? [[55,50,'1',40,28],[180,168,'2',180,205],[305,50,'1',320,28]] : [[55,75,'1',35,48],[305,75,'1',325,48],[180,75,'3',180,42],[180,178,'1',180,215]];
+    let body = '<svg viewBox="0 0 360 238" role="img" aria-label="'+(v?'V形：两个端点各接1条线，中间接2条线':paths?'T形：先画整条横线，再从中间向下画竖线，共两笔':'T形：三个外端点各接1条线，中间接3条线，共4个奇点')+'"><g fill="none" stroke="#2455a6" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">'+line+'</g>';
+    if (paths) body += '<path d="M180 75V178" fill="none" stroke="#b05a16" stroke-width="5"/><g fill="#172b4d" font-size="23" text-anchor="middle"><text x="180" y="42">第 1 笔 →</text><text x="262" y="145">第 2 笔 ↓</text></g>';
+    else body += marks.map(([x,y,n,tx,ty])=>'<circle cx="'+x+'" cy="'+y+'" r="7" fill="'+(n%2?'#b05a16':'#2455a6')+'"/><text x="'+tx+'" y="'+ty+'" text-anchor="middle" fill="#172b4d" font-size="25">'+n+'</text>').join('');
+    return wrap(body+'</svg>',paths?'蓝色横线一笔，棕色竖线一笔。经过同一个点可以；重复画同一段线不可以。':v?'数字表示这个点接了几条线。两个端点是奇点，中间不是。':'1、1、1、3 都是奇数，因此这里有 4 个奇点。');
+  }
+  function triangleSymmetry(halfturn) {
+    return wrap(halfturn
+      ? '<svg viewBox="0 0 360 202" role="img" aria-label="朝上的三角形转180度变为朝下，轮廓不能与原来重合"><g fill="#eaf0fa" stroke="#2455a6" stroke-width="3"><path d="M30 132 90 28 150 132Z"/><path d="M210 28 270 132 330 28Z"/></g><g fill="#172b4d" font-size="22" text-anchor="middle"><text x="90" y="178">原图</text><text x="270" y="178">转半圈后</text><text x="180" y="86">→</text></g></svg>'
+      : '<svg viewBox="0 0 360 218" role="img" aria-label="等腰三角形中间的竖直虚线为对称轴，左右两半能重合"><path d="M75 174 180 28 285 174Z" fill="#eaf0fa" stroke="#2455a6" stroke-width="3"/><path d="M180 12V198" stroke="#b05a16" stroke-width="3" stroke-dasharray="7 5"/><g fill="#172b4d" font-size="22" text-anchor="middle"><text x="135" y="150">左</text><text x="225" y="150">右</text></g></svg>',halfturn?'尖头从上变成下，转过的图形不能与原图重合。':'沿中间的虚线对折，左右两半能够合在一起。');
+  }
+  function mirrorF() {
+    const f='<path d="M-21 40V-40H24M-21-4H12" fill="none" stroke="#2455a6" stroke-width="7" stroke-linecap="square"/>';
+    return wrap('<svg viewBox="0 0 360 176" role="img" aria-label="F原图长横线在上；旋转180度后长横线在下；左右镜像后长横线仍在上"><g transform="translate(58 65)">'+f+'</g><g transform="translate(180 65) rotate(180)">'+f+'</g><g transform="translate(302 65) scale(-1 1)">'+f+'</g><g fill="#172b4d" text-anchor="middle" font-size="21"><text x="58" y="145">原图</text><text x="180" y="145">转半圈</text><text x="302" y="145">左右镜像</text></g></svg>','看长横线：原图在上；转半圈后在下；左右照镜子后仍在上。');
+  }
+  function twoTriangles() {
+    return wrap('<svg viewBox="0 0 360 210" role="img" aria-label="两个互不接触的三角形，各一笔，共两笔"><g fill="none" stroke-width="4" stroke-linejoin="round"><path d="M28 136 88 32 148 136Z" stroke="#2455a6"/><path d="M212 136 272 32 332 136Z" stroke="#b05a16"/></g><g fill="#172b4d" text-anchor="middle" font-size="23"><text x="88" y="185">1 笔</text><text x="272" y="185">1 笔</text></g></svg>','中间没有连接线。从左图到右图，必须抬笔一次，所以总共两笔。');
+  }
+  const visuals = {
+    'cross-people':()=>wrap(table(['人物','是老师','会游泳'],[['甲','是','是'],['乙','是','否'],['丙','否','是'],['丁','否','否']]),'甲在两类重合处；乙和丙各只属于一类；丁不属于这两类。'),
+    'stroke-v':()=>strokeGraph('v'), 'stroke-t':()=>strokeGraph('t'), 'stroke-t-paths':()=>strokeGraph('t',true),
+    'symmetry-triangle':()=>triangleSymmetry(false), 'symmetry-halfturn':()=>triangleSymmetry(true), 'mirror-f':mirrorF,
+    'scale-numbers':()=>wrap(table(['木棍','真实长度','读数'],[['较长','100','85'],['较短','80','68'],['两者差值','20','17']]),'单位都是厘米。每个长度乘 0.85，大小顺序不变，差值变小。100÷80 和 85÷68 都等于 1.25。'),
+    'two-triangles':twoTriangles,
+    'people-1':()=>people(1), 'people-2':()=>people(2), 'people-3':()=>people(3),
+    'movement-question':()=>movement(false), 'movement-answer':()=>movement(true), 'common-lines':commonLines, 'edge-counts':edges, 'arrows-question':arrows,
+    'app-observation':()=>wrap(table(['已经观察到','还需要解释'],[['用 App：85 分','差距由谁造成？'],['不用：70 分','是不是原本就不同？']]),'分数差距存在，不等于原因已经确定。'),
+    'app-baseline':()=>wrap(table(['两组人','使用前','本次考试'],[['用 App 组','85 分','85 分'],['不用组','70 分','70 分']]),'两组原本就差 15 分，不能直接把现在的差距记到 App 头上。'),
+    'app-comparison':()=>wrap(table(['随机分组','开始时','结束时'],[['用 App 组','60 分','85 分'],['不用组','60 分','70 分']]),'假设学习时间、内容等可比：一组提升 25 分，另一组提升 10 分。额外提升更有理由归因于 App。'),
+    'app-effects':()=>wrap(table(['补充信息','判断怎么变'],[['原本就更优秀','更怀疑这个归因'],['其他条件可比，提升更多','更相信这个归因'],['图标是蓝色','没有直接说明影响']]),'先说清“为什么改变判断”，再给它起名叫加强、削弱或无关。'),
+    'kind-example':()=>wrap('<p class="demo-sentence">麻雀 <b>是鸟的一种</b></p><p class="demo-caption">小类 → 所属的大类</p>'),
+    'kind-vs-part':()=>wrap(table(['尝试同一句话','是否成立'],[['玫瑰是花的一种','成立'],['车轮是汽车的一种','不成立']]),'车轮只能说是汽车的一部分。'),
+    'relation-order':()=>wrap(table(['题干位置','第一项','第二项'],[['麻雀∶鸟','小类','大类'],['玫瑰∶花','小类','大类'],['花∶玫瑰','大类','小类']]),'最后一行把顺序颠倒了。'),
+    'definition-conditions':()=>wrap('<ol class="condition-list"><li>本社区居民</li><li>自愿参加</li><li>提供公共服务</li><li>不领劳动报酬</li></ol>','这个自编定义要求四条同时成立。'),
+    'definition-check':()=>wrap(table(['必要条件','甲的情况'],[['本社区居民','满足'],['自愿参加','满足'],['公共服务','满足'],['不领劳动报酬','不满足：领了工资']]),'最后一条冲突，已经足以判断“不符合”。'),
+    'definition-pass':()=>wrap(table(['必要条件','乙的情况'],[['本社区居民','满足'],['自愿参加','满足'],['公共服务','满足'],['不领劳动报酬','满足']]),'留下选项以后，还要检查它是否把全部条件满足。'),
+    'reading-examples':()=>wrap(table(['具体做法','共同目的'],[['晚上也开放','时间方便'],['设在公交站旁','到达方便'],['增设无障碍通道','进入方便']]),'全段在说“使用便利”，不只在说“晚上开放”。'),
+    'book-plan':()=>wrap('<ol class="condition-list"><li>除尘</li><li>补页</li><li>装订</li></ol>','文章自己给了先后顺序。'),
+    'book-left':()=>wrap(table(['准备介绍的部分','当前进度'],[['除尘','已讲完'],['补页','已讲完'],['装订','尚未展开']]),'下一段先接还没有展开的装订。'),
+    'sentence-fit':()=>wrap('<p class="demo-sentence">证件上门办服务</p><p class="demo-caption">后文的“这类服务”有了所指</p><p class="demo-sentence">不必出门排队 · 工作人员上门</p>'),
+    'order-pair':()=>wrap('<ol class="condition-list"><li>② 延长开放时间</li><li>① <b>这种安排</b>方便居民</li></ol>','①的“这种安排”，指的就是②这件事。'),
+    'order-complete':()=>wrap('<ol class="condition-list"><li>② 先交代：延时开放</li><li>① 再解释：方便居民</li><li>③ 最后说结果：晚间来的人增多</li></ol>'),
+    'word-evidence':()=>wrap(table(['原文线索','需要的词义'],[['最后收尾','终：做到结束'],['保持开工时的谨慎','如始：像开始时一样']]),'不是凭词的气势选，而是把词义和原文一项项对上。')
+  };
+  root.LessonVisuals = {has:name=>Object.prototype.hasOwnProperty.call(visuals,name), render:name=>visuals[name]?visuals[name]():''};
+})(globalThis);
+</script>
+  <script>(function () {
+  'use strict';
+  const C = StudyCore;
+  const data = JSON.parse(document.getElementById('study-data').textContent);
+  const cards = data.cards;
+  const byId = new Map(cards.map(card => [card.id, card]));
+  const KEY = 'wuzhang-jiuting.progress.v1';
+  const $ = id => document.getElementById(id);
+  let state = C.fresh();
+  let writable = true;
+  let screen = 'home';
+  let ratingBusy = false;
+  function storageWarning(message) {
+    $('storage-warning').textContent = message;
+    $('storage-warning').hidden = false;
+  }
+  try {
+    const raw = localStorage.getItem(KEY);
+    if (raw !== null) {
+      try { state = C.validate(JSON.parse(raw), cards); }
+      catch {
+        writable = false;
+        storageWarning('原有进度格式异常，已保留原数据。本次可用，关闭后可能丢失；可导入有效备份恢复，或确认清空后重新开始。');
+      }
+    }
+    // Probe without touching the real progress key, including when no cards were learned.
+    const probe = KEY + '.probe';
+    localStorage.setItem(probe, '1');
+    localStorage.removeItem(probe);
+  } catch {
+    writable = false;
+    storageWarning('本次可用，关闭后可能丢失。浏览器无法保存进度，请在结束前导出备份。');
+  }
+  function save(force = false) {
+    if (!writable && !force) return false;
+    try {
+      localStorage.setItem(KEY, JSON.stringify(state));
+      writable = true;
+      $('storage-warning').hidden = true;
+      return true;
+    } catch {
+      writable = false;
+      storageWarning('本次可用，关闭后可能丢失。浏览器无法保存进度，请在结束前导出备份。');
+      return false;
+    }
+  }
+  function notify(text, warning = false) {
+    $('notice').textContent = text;
+    $('notice').classList.toggle('warning', warning);
+    $('notice').hidden = !text;
+  }
+  function focus(id) { $(id).focus({preventScroll: true}); }
+  function goTop() { $('workspace').scrollIntoView({block: 'start', behavior: 'instant'}); }
+  function setScreen(next) {
+    screen = next;
+    for (const name of ['home', 'study', 'done']) $(name).hidden = next !== name;
+  }
+  function unfinished() { return state.session && state.session.index < state.session.queue.length; }
+  function dateLabel(time) {
+    return new Intl.DateTimeFormat('zh-CN', {month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit', hour12: false}).format(new Date(time));
+  }
+  function sourceLinks(node, source) {
+    node.replaceChildren();
+    if (data.sourceFilesAvailable === false) { node.textContent = source; return; }
+    const re = /([AB])\s*PDF(\d+)(?:[–—-](\d+))?/g;
+    let last = 0;
+    for (const match of source.matchAll(re)) {
+      node.append(document.createTextNode(source.slice(last, match.index)));
+      const a = document.createElement('a');
+      a.textContent = match[0];
+      a.href = 'source-' + match[1].toLowerCase() + '.pdf#page=' + match[2];
+      a.target = '_blank';
+      a.rel = 'noopener';
+      node.append(a);
+      last = match.index + match[0].length;
+    }
+    node.append(document.createTextNode(source.slice(last)));
+  }
+  const diagramContent = {
+    bridge: '<figure class="diagram-wrap"><svg viewBox="0 0 360 112" role="img" aria-label="证据通过中间联系支持结论，检查这条联系"><rect x="4" y="26" width="80" height="52" rx="9" fill="#eaf0fa"/><rect x="276" y="26" width="80" height="52" rx="9" fill="#eaf0fa"/><path d="M94 52H263m-8-7 8 7-8 7" fill="none" stroke="#2455a6" stroke-width="2"/><g fill="#172b4d" font-size="20" text-anchor="middle"><text x="44" y="60">证据</text><text x="316" y="60">结论</text><text x="178" y="30">中间缺了什么？</text></g></svg><figcaption>把选项放到这条联系上：补强、拆弱，还是没有改变？</figcaption></figure>',
+    venn: '<figure class="diagram-wrap"><svg viewBox="0 0 360 180" role="img" aria-label="交叉关系有三块：仅A、同时A和B、仅B"><circle cx="133" cy="90" r="76" fill="#2455a6" fill-opacity=".10" stroke="#2455a6" stroke-width="2"/><circle cx="227" cy="90" r="76" fill="#2455a6" fill-opacity=".10" stroke="#2455a6" stroke-width="2"/><g fill="#172b4d" font-size="20" text-anchor="middle"><text x="102" y="97">仅 A</text><text x="180" y="85">A</text><text x="180" y="111">且 B</text><text x="258" y="97">仅 B</text></g></svg><figcaption>三块都能举出例子，才是部分交叉。</figcaption></figure>',
+    euler: '<figure class="diagram-wrap"><svg viewBox="0 0 360 156" role="img" aria-label="折线两端各是一个奇点，中间顶点连着两条边是偶点"><path d="m40 116 140-75 140 75" fill="none" stroke="#172b4d" stroke-width="3"/><circle cx="40" cy="116" r="6" fill="#8a4b12"/><circle cx="320" cy="116" r="6" fill="#8a4b12"/><circle cx="180" cy="41" r="5" fill="#2455a6"/><g fill="#172b4d" font-size="20" text-anchor="middle"><text x="40" y="149">奇点</text><text x="320" y="149">奇点</text><text x="180" y="25">偶点 · 2 条边</text></g></svg><figcaption>连通，且恰有 2 个奇点：从一个奇点出发，在另一个结束。</figcaption></figure>',
+    separate: '<figure class="diagram-wrap"><svg viewBox="0 0 360 144" role="img" aria-label="两个互不相连的三角形，均没有奇点"><path d="m20 120 65-99 65 99Zm190 0 65-99 65 99Z" fill="none" stroke="#2455a6" stroke-width="3"/><g fill="#172b4d" font-size="20" text-anchor="middle"><text x="85" y="99">0 奇点</text><text x="275" y="99">0 奇点</text></g></svg><figcaption>每部分至少一笔。总共两笔，不能凭空添加连接线。</figcaption></figure>'
+  };
+  function refreshUtilities() {
+    const active = unfinished();
+    $('filters').disabled = Boolean(active);
+    $('filter-note').textContent = active ? '本轮尚未完成。继续这一轮后，就能调整范围。' : '先复习到期卡，再按方法、必记、迁移加入新卡。';
+    $('topic').value = state.filters.topic;
+    $('kind').value = state.filters.kind;
+    $('filter-summary').textContent = [state.filters.topic, state.filters.kind === '全部' ? '自动安排' : state.filters.kind].join(' · ');
+    const learned = Object.keys(state.progress).length;
+    const due = cards.filter(card => state.progress[card.id]?.due <= Date.now()).length;
+    $('progress-summary').textContent = learned ? '已练 ' + learned + ' / 40' : '尚未开始';
+    $('progress-description').textContent = '已练习 ' + learned + ' 张，全部题型中有 ' + due + ' 张到期。这是接触过的卡片数，不是掌握率。';
+  }
+  function renderHome() {
+    setScreen('home');
+    refreshUtilities();
+    const selection = C.eligible(cards, state, Date.now());
+    $('start').disabled = false;
+    if (unfinished()) {
+      $('home-title').innerHTML = '接着上次，<br>慢慢想就好。';
+      $('home-note').textContent = '这一轮已完成 ' + state.session.index + ' / ' + state.session.queue.length + ' 张。';
+      $('start').textContent = '继续这一轮';
+      $('availability').textContent = writable ? '翻卡位置和已评进度均会保留。' : '本次可继续；关闭前请导出备份。';
+    } else if (selection.queue.length) {
+      $('home-title').innerHTML = '先看懂，再自己做。<br>一轮 5 张，做完就停。';
+      $('home-note').textContent = selection.due.length ? '遇到没弄懂的方法，先跟着例题做一遍。' : Object.keys(state.progress).length ? '这次仍然只做一小轮。' : state.filters.kind === '全部' && state.filters.topic === '全部' ? '跟着一道小题，弄清每一步为什么。' : '按你选的范围，一次只练一点。';
+      $('start').textContent = '开始这一轮';
+      $('availability').textContent = '本轮 ' + selection.queue.length + ' 张 · 当前范围：' + selection.due.length + ' 张到期，' + selection.unseen.length + ' 张未学';
+    } else {
+      $('home-title').innerHTML = selection.pool.length ? '这一刻，可以停。' : '这个组合，暂时没有卡片。';
+      const future = selection.pool.map(card => state.progress[card.id]?.due).filter(Number.isFinite);
+      $('home-note').textContent = future.length ? '下次复习：' + dateLabel(Math.min(...future)) + '。' : '换个题型或练习模式，就能继续。';
+      $('start').textContent = '调整练习范围';
+      $('availability').textContent = selection.pool.length ? '当前范围暂无到期卡和未学卡。' : '可以在下方改回「全部」。';
+    }
+  }
+  function startRound() {
+    notify('');
+    if (!unfinished()) {
+      const queue = C.eligible(cards, state, Date.now()).queue;
+      if (!queue.length) {
+        renderHome();
+        $('filters-panel').open = true;
+        focus('topic');
+        return;
+      }
+      state.session = {queue, index: 0, revealed: false, ratings: []};
+      save();
+    }
+    for (const node of document.querySelectorAll('.utility')) node.open = false;
+    renderStudy();
+    goTop();
+    focus('question');
+  }
+  function renderStudy() {
+    const s = state.session;
+    if (!s) return renderHome();
+    if (s.index >= s.queue.length) return renderDone();
+    setScreen('study');
+    refreshUtilities();
+    const card = byId.get(s.queue[s.index]);
+    $('round-count').textContent = '第 ' + (s.index + 1) + ' 张 / 共 ' + s.queue.length + ' 张';
+    $('round-progress').replaceChildren();
+    $('round-progress').setAttribute('aria-label', '本轮已完成 ' + s.index + ' / ' + s.queue.length + ' 张');
+    for (let i = 0; i < s.queue.length; i++) {
+      const part = document.createElement('span');
+      part.className = i < s.index ? 'complete' : i === s.index ? 'current' : '';
+      $('round-progress').append(part);
+    }
+    $('card-meta').textContent = card.lesson ? card.lesson.type : card.kind + ' · ' + card.topic;
+    $('question').textContent = card.q;
+    $('recognize').hidden = !card.lesson;
+    $('recognize').textContent = card.lesson?.recognize || '';
+    $('learn').hidden = !card.lesson;
+    $('learn-from-summary').hidden = !card.lesson;
+    $('recall-note').textContent = card.lesson ? '还不明白怎么做，就先看例题。已经会了，可以直接回忆要点。' : '先在心里说出答案，不急着翻。';
+    $('reveal').textContent = card.lesson ? '直接看要点' : '看答案';
+    $('reveal').classList.toggle('primary', !card.lesson);
+    $('recall').hidden = s.revealed;
+    $('answer-panel').hidden = !s.revealed;
+    $('answer').textContent = card.a;
+    $('hook').textContent = card.hook;
+    $('trap').textContent = card.trap;
+    $('source-panel').open = false;
+    sourceLinks($('card-source'), card.source);
+    $('diagram-panel').open = false;
+    $('diagram-panel').hidden = !diagramContent[card.diagram];
+    $('diagram').innerHTML = diagramContent[card.diagram] || '';
+    const days = [1, 3, 7, 14][Math.min(state.progress[card.id]?.streak || 0, 3)];
+    $('good-interval').textContent = days + ' 天后';
+    renderExplanation();
+    for (const button of document.querySelectorAll('[data-rating]')) button.disabled = false;
+    ratingBusy = false;
+  }
+  function renderDone() {
+    setScreen('done');
+    refreshUtilities();
+    const s = state.session;
+    $('done-count').textContent = '本轮完成 ' + s.index + ' 张。';
+    const count = rating => s.ratings.filter(value => value === rating).length;
+    $('done-ratings').textContent = '不会 ' + count('again') + ' · 模糊 ' + count('hard') + ' · 会了 ' + count('good');
+    const next = C.eligible(cards, state, Date.now()).queue.length;
+    $('again').textContent = next ? '再来 ' + next + ' 张' : '看看下次安排';
+  }
+  function rate(rating) {
+    const s = state.session;
+    if (ratingBusy || !s || !s.revealed || s.index >= s.queue.length) return;
+    if (s.lesson && (s.lesson.mode !== 'quiz' || s.lesson.choice === null)) return;
+    ratingBusy = true;
+    for (const button of document.querySelectorAll('[data-rating]')) button.disabled = true;
+    const id = s.queue[s.index];
+    state.progress[id] = C.review(state.progress[id], rating, Date.now());
+    s.ratings.push(rating);
+    s.index++;
+    s.revealed = false;
+    delete s.lesson;
+    save();
+    renderStudy();
+    goTop();
+    focus(s.index >= s.queue.length ? 'done-title' : 'question');
+  }
+  function renderExplanation() {
+    const s = state.session;
+    if (!unfinished()) return;
+    const card = byId.get(s.queue[s.index]);
+    const active = Boolean(card.lesson && s.lesson);
+    $('lesson-panel').hidden = !active;
+    $('summary-content').hidden = active;
+    $('ratings').hidden = active && (s.lesson.mode !== 'quiz' || s.lesson.choice === null);
+    $('rating-prompt').textContent = active ? '换了条件，这次会做了吗？' : '刚才想起来了吗？';
+    if (!active) return;
+    const material = card.lesson;
+    const position = s.lesson;
+    const walk = position.mode === 'walk';
+    $('lesson-walk').hidden = !walk;
+    $('lesson-quiz').hidden = walk;
+    if (walk) {
+      $('lesson-problem').replaceChildren(...material.problem.map(line => {
+        const p = document.createElement('p'); p.textContent = line; return p;
+      }));
+      const step = material.steps[position.step];
+      $('lesson-progress').textContent = '第 ' + (position.step + 1) + ' 步 / 共 ' + material.steps.length + ' 步';
+      $('lesson-title').textContent = step.title;
+      $('lesson-text').textContent = step.text;
+      $('lesson-visual').innerHTML = LessonVisuals.render(step.visual);
+      $('lesson-prev').disabled = position.step === 0;
+      $('lesson-next').textContent = position.step === material.steps.length - 1 ? '换一道，我来试试' : '看下一步';
+    } else {
+      const quiz = material.quiz;
+      $('quiz-question').textContent = quiz.question;
+      $('quiz-visual').innerHTML = LessonVisuals.render(quiz.visual);
+      const buttons = quiz.options.map((option, index) => {
+        const button = document.createElement('button');
+        button.textContent = option.text;
+        button.setAttribute('aria-pressed', String(position.choice === index));
+        button.addEventListener('click', () => {
+          position.choice = index;
+          save();
+          renderExplanation();
+          $('quiz-options').children[index].focus({preventScroll:true});
+        });
+        return button;
+      });
+      $('quiz-options').replaceChildren(...buttons);
+      const chosen = position.choice === null ? null : quiz.options[position.choice];
+      $('quiz-feedback').hidden = !chosen;
+      $('quiz-feedback').textContent = chosen ? chosen.feedback : '';
+      $('quiz-feedback').classList.toggle('try-again', Boolean(chosen && !chosen.correct));
+      $('lesson-takeaway').hidden = !chosen;
+      $('lesson-takeaway').textContent = '带走这一点：' + card.hook;
+    }
+  }
+  function showSummary() {
+    if (!unfinished()) return;
+    state.session.revealed = true;
+    delete state.session.lesson;
+    save();
+    $('recall').hidden = true;
+    $('answer-panel').hidden = false;
+    renderExplanation();
+    focus('answer-title');
+  }
+  function startLesson() {
+    if (!unfinished()) return;
+    const card = byId.get(state.session.queue[state.session.index]);
+    if (!card.lesson) return;
+    state.session.revealed = true;
+    state.session.lesson = {mode:'walk', step:0, choice:null};
+    save();
+    $('recall').hidden = true;
+    $('answer-panel').hidden = false;
+    renderExplanation();
+    $('lesson-panel').scrollIntoView({block:'start',behavior:'instant'});
+    focus('lesson-title');
+  }
+  function buildMethods() {
+    for (const method of data.methods) {
+      const details = document.createElement('details');
+      details.className = 'method';
+      details.name = 'method';
+      const summary = document.createElement('summary');
+      summary.textContent = method.title;
+      const body = document.createElement('div');
+      body.className = 'method-content';
+      const paragraph = (text, cls) => {
+        const p = document.createElement('p');
+        p.textContent = text;
+        if (cls) p.className = cls;
+        return p;
+      };
+      body.append(paragraph('什么时候用：' + method.cue, 'method-cue'));
+      const example = paragraph(method.example, 'method-example');
+      const label = document.createElement('span'); label.className = 'method-label'; label.textContent = '先看完整例题'; example.prepend(label);
+      body.append(example);
+      const steps = document.createElement('ol');
+      const lesson = byId.get('c' + method.id.slice(1)).lesson;
+      lesson.steps.forEach(step => {
+        const li = document.createElement('li');
+        const heading = document.createElement('strong'); heading.textContent = step.title;
+        li.append(heading, paragraph(step.text));
+        if (step.visual) { const visual = document.createElement('div'); visual.innerHTML = LessonVisuals.render(step.visual); li.append(visual); }
+        steps.append(li);
+      });
+      body.append(steps, paragraph('使用时注意：' + method.boundary, 'method-boundary'));
+      const source = paragraph('', 'source caption'); sourceLinks(source, method.source);
+      body.append(paragraph(method.level, 'caption'), source);
+      details.append(summary, body);
+      details.addEventListener('toggle', () => {
+        if (details.open) for (const sibling of $('methods').children) if (sibling !== details) sibling.open = false;
+      });
+      $('methods').append(details);
+    }
+  }
+  $('start').addEventListener('click', startRound);
+  $('pause').addEventListener('click', () => { renderHome(); goTop(); focus('start'); });
+  $('reveal').addEventListener('click', showSummary);
+  $('learn').addEventListener('click', startLesson);
+  $('learn-from-summary').addEventListener('click', startLesson);
+  $('lesson-skip').addEventListener('click', showSummary);
+  $('lesson-next').addEventListener('click', () => {
+    if (!unfinished() || state.session.lesson?.mode !== 'walk') return;
+    const lesson = state.session.lesson;
+    const material = byId.get(state.session.queue[state.session.index]).lesson;
+    if (lesson.step < material.steps.length - 1) lesson.step++;
+    else lesson.mode = 'quiz';
+    save(); renderExplanation();
+    const target = lesson.mode === 'quiz' ? 'quiz-title' : 'lesson-title';
+    $(target).scrollIntoView({block:'start',behavior:'instant'}); focus(target);
+  });
+  $('lesson-prev').addEventListener('click', () => {
+    if (!unfinished() || state.session.lesson?.mode !== 'walk' || state.session.lesson.step === 0) return;
+    state.session.lesson.step--; save(); renderExplanation(); focus('lesson-title');
+  });
+  $('lesson-review').addEventListener('click', () => {
+    if (!unfinished() || !state.session.lesson) return;
+    state.session.lesson.mode = 'walk'; state.session.lesson.choice = null;
+    save(); renderExplanation(); focus('lesson-title');
+  });
+  for (const button of document.querySelectorAll('[data-rating]')) button.addEventListener('click', () => rate(button.dataset.rating));
+  $('finish').addEventListener('click', () => { state.session = null; const saved = save(); renderHome(); notify(saved ? '这一轮已经记下了。可以放心合上页面。' : '本轮已完成，请先导出备份，再关闭页面。'); goTop(); focus('home-title'); });
+  $('again').addEventListener('click', () => {
+    state.session = null;
+    save();
+    if (C.eligible(cards, state, Date.now()).queue.length) startRound();
+    else { renderHome(); goTop(); focus('start'); }
+  });
+  for (const name of ['topic', 'kind']) $(name).addEventListener('change', () => {
+    if (unfinished()) return;
+    state.filters[name] = $(name).value;
+    state.session = null;
+    save();
+    renderHome();
+    notify('');
+  });
+  $('export').addEventListener('click', () => {
+    const blob = new Blob([JSON.stringify({...state, exportedAt: new Date().toISOString()}, null, 2)], {type: 'application/json;charset=utf-8'});
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = url;
+    const now = new Date();
+    const pad = n => String(n).padStart(2, '0');
+    link.download = '五张就停-进度-' + now.getFullYear() + pad(now.getMonth() + 1) + pad(now.getDate()) + '-' + pad(now.getHours()) + pad(now.getMinutes()) + pad(now.getSeconds()) + '.json';
+    document.body.append(link); link.click(); link.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+    notify('已发起进度导出，请在浏览器下载记录中确认保存。');
+  });
+  $('import').addEventListener('click', () => $('import-file').click());
+  $('import-file').addEventListener('change', async event => {
+    const file = event.target.files[0];
+    event.target.value = '';
+    if (!file) return;
+    try {
+      if (file.size > 200000) throw new Error('文件过大，请选择本工具导出的 JSON 进度。');
+      const imported = C.validate(JSON.parse(await file.text()), cards);
+      if (!window.confirm('已检查文件，含 ' + Object.keys(imported.progress).length + ' 张卡片的记录。导入会替换当前进度和本轮位置，确定继续？')) return;
+      state = imported;
+      save(true);
+      renderHome();
+      notify('进度已导入。' + (unfinished() ? '点击「继续这一轮」接着练。' : '可以开始下一轮。'));
+    } catch (error) {
+      notify('导入失败，原进度未改动。' + (error instanceof SyntaxError ? '文件不是有效的 JSON。' : error.message), true);
+    }
+  });
+  $('clear').addEventListener('click', () => {
+    if (!window.confirm('确定清空所有学习进度和本轮位置？此操作无法撤销；建议先导出备份。')) return;
+    const next = C.fresh();
+    try { localStorage.removeItem(KEY); writable = true; $('storage-warning').hidden = true; }
+    catch { writable = false; storageWarning('本次可用，关闭后可能丢失。浏览器拒绝清理存储，先前保存的数据可能仍在。'); }
+    state = next;
+    renderHome();
+    notify('当前学习进度已清空。');
+  });
+  // Do not overwrite another tab's newer progress with a stale round.
+  window.addEventListener('storage', event => {
+    if (event.key !== KEY && event.key !== null) return;
+    try {
+      state = event.newValue ? C.validate(JSON.parse(event.newValue), cards) : C.fresh();
+      writable = true;
+      renderHome();
+      notify('另一个页面更新了进度，已同步。');
+    } catch { notify('另一个页面写入的进度格式异常，本页已暂停保存，请先导出备份。', true); writable = false; }
+  });
+  // Make a newly due card available even if the page has been left open.
+  function refreshClock() { if (screen === 'home') renderHome(); else refreshUtilities(); }
+  window.addEventListener('focus', refreshClock);
+  document.addEventListener('visibilitychange', () => { if (!document.hidden) refreshClock(); });
+  setInterval(refreshClock, 30000);
+  if (data.sourceFilesAvailable === false) {
+    $('pdf-links').hidden = true;
+    $('pdf-links').replaceChildren();
+    $('pdf-web-note').hidden = false;
+  }
+  let installPrompt = null;
+  window.addEventListener('beforeinstallprompt', event => {
+    event.preventDefault(); installPrompt = event; $('install-app').hidden = false;
+  });
+  $('install-app').addEventListener('click', async () => {
+    if (!installPrompt) return;
+    try { await installPrompt.prompt(); await installPrompt.userChoice; }
+    finally { installPrompt = null; $('install-app').hidden = true; }
+  });
+  if (location.protocol === 'file:') {
+    $('offline-status').textContent = '电脑本地文件';
+    $('mobile-instructions').textContent = '这个电脑文件地址不能从手机访问。手机需要使用单独发布的手机版链接。';
+    $('offline-description').textContent = '在安卓浏览器首次联网打开手机版后，可添加到主屏幕；离线就绪后，断网也能学习。';
+  } else if ('serviceWorker' in navigator) {
+    $('offline-status').textContent = '正在准备离线';
+    navigator.serviceWorker.register('./sw.js').then(() => navigator.serviceWorker.ready).then(() => {
+      $('offline-status').textContent = '离线已就绪';
+      $('offline-description').textContent = '本机已保存例题、图示和卡片。下次电脑不在身边，或手机断网，也能从这个地址继续学习。';
+    }).catch(() => {
+      $('offline-status').textContent = '离线尚未就绪';
+      $('offline-description').textContent = '这次仍可学习。离线保存没有完成，请保持网络后重新打开一次。';
+    });
+  } else {
+    $('offline-status').textContent = '仅当前页面可用';
+    $('offline-description').textContent = '当前浏览器不支持保存离线页面。安卓上可在 Chrome 或 Edge 打开手机版链接后再试。';
+  }
+  buildMethods();
+  if (state.session) renderStudy(); else renderHome();
+})();
+</script>
+</body>
+</html>
